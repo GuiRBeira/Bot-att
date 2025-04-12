@@ -1,0 +1,157 @@
+[
+    {
+        "clan": "Pain",
+        "clanEmoji": "☦",
+        "players": [
+            { "name": "Samuel_Seo", "rank": "🔘", "points": 4850 },
+            { "name": "Saulo", "rank": "💠", "points": 4550 },
+            { "name": "Guilherme", "rank": "💠", "points": 1200 },
+            { "name": "Zaack", "rank": "💠", "points": 1200 },
+            { "name": "Matheus", "rank": "💠", "points": 1675 },
+            { "name": "VictorK.", "rank": "✴", "points": 4600 },
+            { "name": "Sinistro", "rank": "✳", "points": 575 },
+            { "name": "Galen", "rank": "✳", "points": 250 },
+            { "name": "Hisoka", "rank": "✳", "points": 550 },
+            { "name": "Gimaloka", "rank": "🈂", "points": 1650 },
+            { "name": "Shadow", "rank": "🈂", "points": 600 },
+            { "name": "Alison", "rank": "🈂", "points": 425 },
+            { "name": "Davizinho", "rank": "🈂", "points": 200 },
+            { "name": "Ribeiro", "rank": "🈂", "points": 100 },
+            { "name": "Akynori", "rank": "🈂", "points": 100 },
+            { "name": "Bernado", "rank": "🈂", "points": 100 },
+            { "name": "Erick", "rank": "🈂", "points": 100 }
+        ]
+    },
+    {
+        "clan": "Shuko",
+        "clanEmoji": "♊",
+        "players": [
+            { "name": "Ninja", "rank": "🈂", "points": 0 }
+        ]
+    },
+    {
+        "clan": "Kami",
+        "clanEmoji": "⚜",
+        "players": [
+            { "name": "Srª.Thais", "rank": "🃏", "points": 4525 },
+            { "name": "Jean", "rank": "💠", "points": 2100 },
+            { "name": "Dom", "rank": "✴", "points": 1650 },
+            { "name": "Yasac", "rank": "✴", "points": 350 },
+            { "name": "Richard", "rank": "✴", "points": 700 },
+            { "name": "WhiteX", "rank": "✳", "points": 2775 },
+            { "name": "Arthur", "rank": "✳", "points": 125 },
+            { "name": "Yami", "rank": "✳", "points": 1500 },
+            { "name": "Menma", "rank": "✳", "points": 325 },
+            { "name": "Shikamaru", "rank": "✳", "points": 100 },
+            { "name": "Batata", "rank": "🈂", "points": 2100 },
+            { "name": "Bee", "rank": "🈂", "points": 900 },
+            { "name": "Evelyn", "rank": "🈂", "points": 350 },
+            { "name": "Ayumi", "rank": "🈂", "points": 350 },
+            { "name": "Mik", "rank": "🈂", "points": 200 },
+            { "name": "Purple", "rank": "🈂", "points": 100 },
+            { "name": "Kevin", "rank": "🈂", "points": 100 },
+            { "name": "Angry", "rank": "🈂", "points": 100 },
+            { "name": "Levi", "rank": "🈂", "points": 100 },
+            { "name": "Yuki", "rank": "🈂", "points": 100 },
+            { "name": "Fabyenne", "rank": "🈂", "points": 50 },
+            { "name": "Richard", "rank": "🈂", "points": 50 },
+            { "name": "Adachi", "rank": "🈂", "points": 50 },
+            { "name": "Diana", "rank": "🈂", "points": 50 },
+            { "name": "Lucas", "rank": "🈂", "points": 50 },
+            { "name": "Eli", "rank": "🈂", "points": 50 }
+        ]
+    },
+    {
+        "clan": "Garasu",
+        "clanEmoji": "⚪",
+        "players": [
+            { "name": "Sr.Rube", "rank": "🎴", "points": 3100 },
+            { "name": "Bruna", "rank": "💠", "points": 4150 },
+            { "name": "Tsu", "rank": "💠", "points": 2125 },
+            { "name": "JoyBoy", "rank": "✳", "points": 2850 },
+            { "name": "Gustavo", "rank": "🈂", "points": 400 },
+            { "name": "Farelo", "rank": "🈂", "points": 400 },
+            { "name": "Knight", "rank": "🈂", "points": 300 },
+            { "name": "KichiPato", "rank": "🈂", "points": 150 },
+            { "name": "Iago", "rank": "🈂", "points": 150 },
+            { "name": "Kichi", "rank": "🈂", "points": 100 },
+            { "name": "Yagi", "rank": "🈂", "points": 100 },
+            { "name": "Kira", "rank": "🈂", "points": 100 },
+            { "name": "Shinobu", "rank": "🈂", "points": 50 },
+            { "name": "Darlcon", "rank": "🈂", "points": 50 },
+            { "name": "Zen'in", "rank": "🈂", "points": 50 },
+            { "name": "Aamon", "rank": "🈂", "points": 50 },
+            { "name": "Mckay", "rank": "🈂", "points": 50 }
+        ]
+    },  
+    {
+        "clan": "Kyūsuke",
+        "clanEmoji": "🗯",
+        "players": [
+            { "name": "Izumi", "rank": "💠", "points": 5000 },
+            { "name": "Alex", "rank": "💠", "points": 2100 },
+            { "name": "Gui", "rank": "💠", "points": 6600 },
+            { "name": "Nathalia", "rank": "💠", "points": 2925 },
+            { "name": "Samura", "rank": "✴", "points": 1550 },
+            { "name": "Sinistro", "rank": "✳", "points": 1400 },
+            { "name": "Dabi", "rank": "✳", "points": 1425 },
+            { "name": "Gio", "rank": "🈂", "points": 950 },
+            { "name": "Shin", "rank": "🈂", "points": 800 },
+            { "name": "Morgana", "rank": "🈂", "points": 550 },
+            { "name": "Alucard", "rank": "🈂", "points": 400 },
+            { "name": "Bille", "rank": "🈂", "points": 300 },
+            { "name": "Kirito", "rank": "🈂", "points": 100 }
+        ]      
+    },
+    {
+      "clan": "Kagari",
+      "clanEmoji": "📛",
+      "players": [
+            { "name": "Karina", "rank": "💠", "points": 1425 },
+            { "name": "Erick", "rank": "💠", "points": 3500 },
+            { "name": "Anenyme", "rank": "✴", "points": 1425 },
+            { "name": "Cazuza", "rank": "✴", "points": 800 },
+            { "name": "Saiko", "rank": "✴", "points": 475 },
+            { "name": "Rogério", "rank": "✳", "points": 150 },
+            { "name": "Kurogane", "rank": "🈂", "points": 1100 },
+            { "name": "Obito", "rank": "🈂", "points": 600 },
+            { "name": "MariRM", "rank": "🈂", "points": 450 },
+            { "name": "Breninho", "rank": "🈂", "points": 250 },
+            { "name": "NakaziRenogo", "rank": "🈂", "points": 150 },
+            { "name": "Rupert", "rank": "🈂", "points": 150 },
+            { "name": "Tata", "rank": "🈂", "points": 150 },
+            { "name": "Mary", "rank": "🈂", "points": 100 },
+            { "name": "Poru", "rank": "🈂", "points": 100 },
+            { "name": "João", "rank": "🈂", "points": 100 },
+            { "name": "Lua", "rank": "🈂", "points": 100 }
+        ]
+    },
+    {
+      "clan": "Rokusho",
+      "clanEmoji": "⛈",
+      "players": [
+            { "name": "Wesley", "rank": "💠", "points": 2550 },
+            { "name": "Shinobu", "rank": "💠", "points": 1625 },
+            { "name": "Tomioka", "rank": "🈂", "points": 800 },
+            { "name": "Sunny", "rank": "🈂", "points": 550 },
+            { "name": "Max", "rank": "🈂", "points": 400 },
+            { "name": "Ban", "rank": "🈂", "points": 400 },
+            { "name": "Marco", "rank": "🈂", "points": 300 },
+            { "name": "Igor", "rank": "🈂", "points": 250 },
+            { "name": "Kim", "rank": "🈂", "points": 250 },
+            { "name": "Namikaze", "rank": "🈂", "points": 200 },
+            { "name": "Lunnay", "rank": "🈂", "points": 200 },
+            { "name": "Shadow", "rank": "🈂", "points": 100 },
+            { "name": "Keke", "rank": "🈂", "points": 100 },
+            { "name": "Edu", "rank": "🈂", "points": 100 }
+      ]
+    },
+    {
+      "clan": "Sanshoūo",
+      "clanEmoji": "🕎",
+      "players": [
+        { "name": "ChicoB", "rank": "💠", "points": 4050 }
+      ] 
+    }
+  ]
+  
