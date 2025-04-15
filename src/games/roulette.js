@@ -11,7 +11,7 @@ function playRoulette(betNumber, betColor, betAmount) {
 
     // Verifica se o jogador acertou o número e a cor
     if (betNumber == rouletteNumber && betColor === rouletteColor) {
-        const prize = betAmount * 10; // Prêmio multiplicado por 10 se acertar número e cor
+        const prize = betAmount * 20; // Prêmio multiplicado por 10 se acertar número e cor
         result += `🎉 Você acertou o número e a cor! Parabéns! Você ganhou ${prize}!🔰 🎉`;
     } 
     // Verifica se o jogador acertou apenas o número
