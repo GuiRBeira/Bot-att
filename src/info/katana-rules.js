@@ -1,6 +1,6 @@
 function getKatana() {
     return `
-*💫(-☢' Regras da Katana'☢-)💫 *
+*💫(-☢' Regras da Katana'☢-)💫*
 *💥💢 - 🈂 Gennin 🈂 - 💢💥*
 
 *✨1️⃣: 1 Jutsu Que Falha e Causa danos {40%🔹 60%🔺}.*
