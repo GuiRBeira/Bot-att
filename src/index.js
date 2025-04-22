@@ -29,6 +29,7 @@ try {
   // 5. Prepara para liberar o lock ao sair
   process.on('SIGINT', () => liberar());
   process.on('SIGTERM', () => liberar());
+  process.on('SIGHUP', () => liberar());
   process.on('exit', () => liberar());
   process.on('uncaughtException', (err) => {
     console.error('Erro não tratado:', err);
