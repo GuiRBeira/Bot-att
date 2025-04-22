@@ -1,50 +1,63 @@
 const fs = require('fs');
 const { execSync } = require('child_process');
 
-// === VERIFICA LOCK AO INICIAR ===
+let lock;
+
 try {
+  // 1. Atualiza repositório local
+  console.log('🔄 Executando git pull...');
   execSync('git pull', { stdio: 'inherit' });
 
-  const lock = JSON.parse(fs.readFileSync('lock.json', 'utf-8'));
+  // 2. Lê o lock.json
+  lock = JSON.parse(fs.readFileSync('lock.json', 'utf-8'));
 
   if (lock.ativo) {
     console.log(`❌ Bot já está ativo no dispositivo: ${lock.origem}`);
     process.exit();
   }
 
+  // 3. Atualiza lock para indicar que está rodando
   lock.ativo = true;
-  lock.origem = 'celular'; // ou 'pc' dependendo de onde rodar
+  lock.origem = 'celular'; // ou 'pc'
   fs.writeFileSync('lock.json', JSON.stringify(lock, null, 2));
 
+  // 4. Commita e envia todas as mudanças
   execSync('git add .');
   execSync('git commit -m "Bot iniciado no celular"');
   execSync('git push', { stdio: 'inherit' });
 
-  // Prepara a liberação do lock ao encerrar
-  process.on('SIGINT', () => liberar(lock));
-  process.on('SIGTERM', () => liberar(lock));
+  // 5. Prepara para liberar o lock ao sair
+  process.on('SIGINT', () => liberar());
+  process.on('SIGTERM', () => liberar());
+  process.on('exit', () => liberar());
+  process.on('uncaughtException', (err) => {
+    console.error('Erro não tratado:', err);
+    liberar();
+  });
 
 } catch (err) {
-  console.error('Erro ao configurar o controle de sessão:', err.message);
-  process.exit();
+  console.error('❗ Erro ao preparar o bot:', err.message);
+  process.exit(1);
 }
 
 // === INICIA O BOT ===
-const startBot = require('./bot/startBot'); // ajuste conforme sua estrutura
+const startBot = require('./bot/startBot');
 startBot();
 
 
-// === FUNÇÃO PARA LIBERAR LOCK AO ENCERRAR ===
-function liberar(lock) {
-  console.log('\n🛑 Encerrando bot e liberando lock...');
+// === FUNÇÃO DE ENCERRAMENTO ===
+function liberar() {
+  if (!lock || !lock.ativo) return;
+
+  console.log('\n🛑 Encerrando e liberando lock...');
   lock.ativo = false;
   fs.writeFileSync('lock.json', JSON.stringify(lock, null, 2));
+
   try {
-    execSync('git add lock.json');
+    execSync('git add .');
     execSync('git commit -m "Bot encerrado no celular"');
     execSync('git push', { stdio: 'inherit' });
-  } catch (e) {
-    console.error('Erro ao liberar o lock:', e.message);
+  } catch (err) {
+    console.error('⚠️ Erro ao liberar lock:', err.message);
   }
-  process.exit();
 }
