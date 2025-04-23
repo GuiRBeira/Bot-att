@@ -18,12 +18,12 @@ try {
 
   // 3. Atualiza lock para indicar que está rodando
   lock.ativo = true;
-  lock.origem = 'celular'; // ou 'pc'
+  lock.origem = 'pc'; // ou 'pc'
   fs.writeFileSync('lock.json', JSON.stringify(lock, null, 2));
 
   // 4. Commita e envia todas as mudanças
   execSync('git add .');
-  execSync('git commit -m "Bot iniciado no celular"');
+  execSync('git commit -m "Bot iniciado no pc"');
   execSync('git push', { stdio: 'inherit' });
 
   // 5. Prepara para liberar o lock ao sair
