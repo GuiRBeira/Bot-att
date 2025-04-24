@@ -27,14 +27,14 @@ try {
   execSync('git push', { stdio: 'inherit' });
 
   // 5. Prepara para liberar o lock ao sair
-  process.on('SIGINT', () => liberar());
-  process.on('SIGTERM', () => liberar());
-  process.on('SIGHUP', () => liberar());
-  process.on('exit', () => liberar());
+  process.on('SIGINT', () => liberar(true));
+  process.on('SIGTERM', () => liberar(true));
+  process.on('SIGHUP', () => liberar(true));
   process.on('uncaughtException', (err) => {
     console.error('Erro não tratado:', err);
-    liberar();
+    liberar(true);
   });
+  process.on('exit', () => liberar(false)); // não força sair, só atualiza lock
 
 } catch (err) {
   console.error('❗ Erro ao preparar o bot:', err.message);
@@ -47,7 +47,7 @@ startBot();
 
 
 // === FUNÇÃO DE ENCERRAMENTO ===
-function liberar() {
+function liberar(ehFinalForcado = false) {
   if (!lock || !lock.ativo) return;
 
   console.log('\n🛑 Encerrando e liberando lock...');
@@ -61,4 +61,6 @@ function liberar() {
   } catch (err) {
     console.error('⚠️ Erro ao liberar lock:', err.message);
   }
+
+  if (ehFinalForcado) process.exit(0); // Só força saída se necessário
 }
