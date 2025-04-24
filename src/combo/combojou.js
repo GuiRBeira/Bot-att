@@ -19,27 +19,27 @@ function placaJInicial(nome, cla, rank) {
 ●
 ●
 *○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
-*🈳👹( Kuchiyose • Naraka )👹🈳*
-                 ( Deus Da Morte )
+*🃏 (•🎓Fūin No Feudal🎓•)🃏*
+        _(💫Selo Feudal³💫)_
 
-   *💫Ҩ ❪❕' Ativação ³ '❕❫ Ҩ💫*
+❕❮•💢❝ ATIVAÇÃO V3❞💢•❯❕
 ➖➖➖➖➖➖➖➖➖➖➖
-☁✨ 🕊🌥 🍃🦋☁✨ 🐝 ☁
- ☁🦋✨🍃☁💢🛩͢\`☁🕊✨
-__💫\`\` Ҩ ◾ • 😡 • ◾ Ҩ \`\`💫__
-__💫\`\` Ҩ ◾ • 🙏🏻 • ◾ Ҩ \`\`💫__
-✨  ❰ ❪ 🩸 ㄔ´   🔝   \`ㄔ 🩸 ❫ ❱  ✨
-•Ҩ\`🔹 ' 🃏   (' 👹 🤟🏻   🃏 ' 💕\`Ҩ•
-' ✨ ꒺• 🖇     ¨  \\ ´\\          🖇 •꒺ ✨ '
-•Ҩ\`💕 ' 🃏        /   'ゝ     🃏 ' 🔹\`Ҩ•
-🪨🐾🍃✨ 🐌🕳 🌾🌾✨🥀
+🌧💥 🚀 ⛈ ☁✨🦅🌧 🌙 ☁
+  ☁🌧🔸🌈  ⃪☁⃪((💫🍂 💥 🌧
+〰Ҩ ❱▫° •🚫❯🃏❮🚫• °▫❰ Ҩ〰
+• ❪🃏❫ • ᔙ🔹❞  😌  ❝🔹ᔘ • ❪🃏❫ •
+🎓 ___ ₰ ➰)) °' 🙏'° ((➰ ₰ ___ 🎓
+• ❪🃏❫ • ᔗ🔹❞  🎓  ❝🔹ᔚ • ❪🃏❫ •
+〰Ҩ ❱▫° •🚫❯🃏❮🚫• °▫❰ Ҩ〰
+🎋🐚🍃🕳🍄🐿🥀🐾🍃🎋🌻
 ➖➖➖➖➖➖➖➖➖➖➖
 
-*ల ❪ +100%🔹 ❫ Em Chakra❕*
-*ల ❪ +100%❣ ❫ Em Vida❕*
-*ల ❪ +70%🔺 ❫ Em Danos❕*
+*• Aumenta ❪ +100%🔹❫ De Chakra ❕*
+*• Aumenta ❪ +100%❣❫ De Hp ❕*
 
-*(🈳👹✴)( Descrição ):* O Caminho Naraka (地獄道, Jigokudō) Concede ao Usuário o Domínio do Interrogatório e da Restauração, Utilizando Yama, o Rei do Inferno. Sem a Realizar Selos de Mão, Yama é Invocado Envolto de Chamas Roxas e Possuindo Rinnegan, Ampliando o Campo de Visão do Ninja Invocador, Além de Auxiliar No Julgamento do Oponente e Na Reabilitação do Vigor dos Aliados.
+❰🃏🎓✴❱❪ Descrição ❫ : Após muito anos de treinamento, o Feudal muito experiente, consegue a habilidade de criar um poderoso selo. Esse selo ao ser Ativado é capaz de aprimorar as habilidades de seu usuário, tornando mais refinado as técnicas usada por seu portador.
+*➖ ❪ +70%🔹❫ Danos Em Ninjutsus❕*
+*➖ ❪ +70%🔺❫ Danos Em Taijutsus❕*
 *💱⟦🌟❰ 絶対輝きの顕現 : Zettai Kagayaki no Kengen ❱🌟⟧💱*
 _𐔟 ⟮Manifestação da Radiância Absoluta⟯ 𐔟_
 
@@ -197,12 +197,12 @@ function placaJFinal(nome, cla, rank, gasto = 0) {
     ●
     ●
     ●
-            *💠⟦❝🗯 Gui 🗯❞ ⟧💠*
+            *🃏⟦❝🗯 Gui 🗯❞ ⟧🃏*
     *❰ ❤ 490 ❤ ❱ ♧ ❰ 🔹 770 🔹 ❱*
-    ● Kagayaki no Kengen 🌟💱
+    ● Kagayaki no Kengen 🌟💱 +10🔺
     ● Erementaru Ōra 🌪️ 1/3 +30🔺
-    ● Kuchiyose Naraka 👹 +70❤️🔹 +70🔺
-    ● Yōton +70🔹 +70🔺 -30🔹
+    ● Fūin No Feudal 🃏 +70❤️🔹 +70🔺
+    ● Yōton 🗯 +70🔹 +70🔺 -30🔹
     ● Kyūbi Senjutsu +20❤🔹 1/2 +10🔺 1/4
     *○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*`;
 }
