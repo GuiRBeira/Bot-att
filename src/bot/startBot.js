@@ -7,10 +7,9 @@ const { groupIds, vila, coliseu } = require('../config/group-ids');
 // Funções de processamento de mensagens
 const { processVilaMessages } = require('./handlers/vilaCommands')
 const { processGameMessages , processSlotMachine, processRoulette } = require('./handlers/gameCommands')
-const { processCombo } = require('./handlers/comboCommands..js')
+const { processCombo } = require('./handlers/comboCommands')
 const { processColiseuMessages } = require('./handlers/coliseuCommands')
 // aqui segue a vida normalmente
-
 
 function startBot() {
     
