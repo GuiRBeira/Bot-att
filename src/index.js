@@ -22,7 +22,7 @@ async function getOrigem() {
     lock = JSON.parse(fs.readFileSync('lock.json', 'utf-8'));
 
     if (lock.ativo) {
-      console.log('❌ Bot já está ativo no dispositivo: ${lock.origem}');
+      console.log(`❌ Bot já está ativo no dispositivo: ${lock.origem}`);
       process.exit();
     }
 
@@ -33,7 +33,7 @@ async function getOrigem() {
 
     // 4. Commita e envia todas as mudanças
     execSync('git add .');
-    execSync('git commit -m "Bot iniciado no ${lock.origem}"');
+    execSync(`git commit -m "Bot iniciado no ${lock.origem}"`);
     execSync('git push', { stdio: 'inherit' });
 
     // 5. Prepara para liberar o lock ao sair
