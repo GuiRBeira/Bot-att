@@ -73,7 +73,7 @@ function liberar(ehFinalForcado = false) {
     execSync('git add .');
     const status = execSync('git status --porcelain').toString().trim();
     if (status) {
-      execSync(`git commit -m "Bot encerrado no ${lock.origem || 'desconhecido'}"`);
+      execSync(`git commit -m "Bot encerrado"`);
       execSync('git push', { stdio: 'inherit' });
     } else {
       console.log('🔒 Lock liberado sem mudanças.');
