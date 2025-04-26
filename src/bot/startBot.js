@@ -82,6 +82,7 @@ function startBot() {
 
             // Filtro: ignora mensagens de sistema, bots ou tipos desconhecidos
             if (!msg.message || msg.key.remoteJid.includes('lid') || msg.message.protocolMessage) {
+                console.log('Mensagem ignorada (tipo desconhecido ou LID):', msg.key.remoteJid);
                 return;
             }
         
