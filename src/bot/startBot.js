@@ -80,7 +80,17 @@ function startBot() {
     
         sock.ev.on('messages.upsert', async (m) => {
             const msg = m.messages[0];
-            await processMessage(sock, msg);
+
+            // Filtro: ignora mensagens de sistema, bots ou tipos desconhecidos
+            if (!msg.message || msg.key.fromMe || msg.key.remoteJid.includes('lid') || msg.message.protocolMessage) {
+                return;
+            }
+        
+            try {
+                await processMessage(sock, msg);
+            } catch (err) {
+                console.error('Erro ao processar mensagem:', err);
+            }
         });
     }
     // Executa a função principal
