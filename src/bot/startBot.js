@@ -82,7 +82,7 @@ function startBot() {
             const msg = m.messages[0];
 
             // Filtro: ignora mensagens de sistema, bots ou tipos desconhecidos
-            if (!msg.message || msg.key.fromMe || msg.key.remoteJid.includes('lid') || msg.message.protocolMessage) {
+            if (!msg.message || msg.key.remoteJid.includes('lid') || msg.message.protocolMessage) {
                 return;
             }
         
