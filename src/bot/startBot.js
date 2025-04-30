@@ -12,18 +12,7 @@ const { processColiseuMessages } = require('./handlers/coliseuCommands')
 // aqui segue a vida normalmente
 
 function startBot() {
-    
-    async function processApostaMessages(sock, msg, text) {
-        if (text.startsWith('💫(•🏟\'❰ Coliseu Estelar ❱\'🏟•)💫\n 📝❪•💸❝ Ficha de Aposta ❞💸•❫📝\n\n•➖➖❰✨ ⟦• ✰ ❲🏟❳ ✰ •⟧ ✨❱➖➖•\n\n')) {
-            console.log('ENTROU NA LINHA 137');
-            const response = processarAposta(text); // Processa a ficha de aposta
-            await sock.sendMessage(msg.key.remoteJid, { text: response }); // Envia a resposta
-        } else if (text.startsWith('/apostas')) {
-            await sock.sendMessage(msg.key.remoteJid, { text: rulesApostas() }); // Envia a resposta
-            await sock.sendMessage(msg.key.remoteJid, { text: limApostas() }); // Envia a resposta
-        }
-    }
-    
+        
     // Função principal de processamento de mensagens
     async function processMessage(sock, msg) {
         const text = msg.message?.conversation || msg.message?.extendedTextMessage?.text || '';
