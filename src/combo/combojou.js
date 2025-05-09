@@ -4,8 +4,7 @@ function placaJInicial(nome, cla, rank) {
   const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
   const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
   const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
-
-  return `*○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
+/**○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
 *${rank} ⟦❝ ${cla} ${nome} ${cla} ❞ ⟧ ${rank}*
 *❰ ❤ 400 ❤ ❱ ♧ ❰ 🔹 800 🔹 ❱*
 ●
@@ -18,7 +17,21 @@ function placaJInicial(nome, cla, rank) {
 ●
 ●
 ●
-*○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
+*○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○**/
+  return `
+  ⊹₊˚🤱🏽 ${nome} ${cla}${rank}✦
+  400 💖 • 800 👑
+  .
+  .
+  .
+  💐 ${dia}/${mes}/${ano} 💫
+  
+  ˚˳⊹🤱🏻★ Gui . 🗯🃏୧
+  400 💖 • 800 👑 
+  .
+  . 
+  .
+  ⊰❀ Feliz Dia das Mães ❀⊱
 *🃏 (•🎓Fūin No Feudal🎓•)🃏*
           _(💫Selo Feudal³💫)_
 
@@ -189,8 +202,7 @@ function placaJFinal(nome, cla, rank, gasto = 0) {
   const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
   const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
   const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
-
-  return `*○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
+/**○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
     *${rank} ⟦❝ ${cla} ${nome} ${cla} ❞ ⟧ ${rank}*
     *❰ ❤ 0 ❤ ❱ ♧ ❰ 🔹 ${800 - gasto} 🔹 ❱*
     ●
@@ -204,7 +216,23 @@ function placaJFinal(nome, cla, rank, gasto = 0) {
     ● Fūin No Feudal 🃏 +70❤️🔹 +70🔺
     ● Yōton 🗯 +70🔹 +70🔺 -30🔹
     ● Kyūbi Senjutsu +20❤🔹 1/2 +10🔺 1/4
-    *○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*`;
+    *○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○**/
+  return `
+    ⊹₊˚🤱🏽 ${nome} ${cla}${rank}✦
+  0 💖 • ${800 - gasto} 👑
+  .
+  .
+  .
+  💐 ${dia}/${mes}/${ano} 💫
+  
+  ˚˳⊹🤱🏻★ Gui . 🗯🃏୧
+  490 💖 • 770 👑 
+  . Kagayaki no Kengen 🌟💱 +10🔺
+  . Erementaru Ōra 🌪️ 1/3 +30🔺
+  . Fūin No Feudal 🃏 +70❤️🔹 +70🔺
+  . Yōton 🗯 +70🔹 +70🔺 -30🔹
+  . Kyūbi Senjutsu +20❤🔹 1/2 +10🔺 1/4
+  ⊰❀ Feliz Dia das Mães ❀⊱`;
 }
 
 module.exports = {
