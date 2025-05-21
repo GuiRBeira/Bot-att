@@ -4,7 +4,7 @@ const { get } = require('http');
 const path = require('path');
 
 function getAmePontos() {
-    const filePath = path.join(__dirname, 'data', 'ame-pontos.json');
+    const filePath = path.join(__dirname, '../info/data', 'ame-pontos.json');
     const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
     
     const today = new Date();
@@ -40,5 +40,7 @@ function getAmePontos() {
     console.log(msg);
     return msg;
 }
+
+getAmePontos();
 
 module.exports = { getAmePontos };
