@@ -154,7 +154,26 @@ function placaFinal(nome, cla, rank, gasto) {
     const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
     const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
 
-    return `*○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
+    return `
+  ｡°💞•(❪👩‍❤️‍👨 *Nαɱσɾα∂σร* 👩‍❤️‍💋‍👨❫)•💞° ｡
+
+  ˚˳⊹🤱🏻★ Gui . 🗯🃏୧
+  320 💖 • 350 👑 
+    ● 🖐🏻 2/3
+    ● Ame no Habakiri ☢✳
+    ● Kyūbi Senjutsu +20❤🔹 1/2 +10🔺 1/4
+•
+•
+•
+     💍•(${dia}/${mes}/${ano})•💍
+
+         ✨ ·࣭࣪̇˖ ${nome} ${cla}${rank}  ·࣭࣪̇˖
+     「0❤‍🔥  ꮼ  ${600 - gasto}💐」
+•
+•
+•
+｡°💞•(❪👩‍❤️‍👨 *Nαɱσɾα∂σร* 👩‍❤️‍💋‍👨❫)•💞° `;
+    /**○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
     *${rank} ⟦❝ ${cla} ${nome} ${cla} ❞ ⟧ ${rank}*
     *❰ ❤ 0 ❤ ❱ ♧ ❰ 🔹 ${600 - gasto} 🔹 ❱*
     ●
@@ -166,7 +185,9 @@ function placaFinal(nome, cla, rank, gasto) {
     ● 🖐🏻 2/3
     ● Ame no Habakiri ☢✳
     ● Kyūbi Senjutsu +20❤🔹 1/2 +10🔺 1/4
-    *○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*`;
+    *○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○* */
+
+
 }
 
 function getKunais() {
