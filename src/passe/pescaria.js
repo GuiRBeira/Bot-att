@@ -20,7 +20,7 @@ function Pescaria() {
     } else if (chance < 95) {
         return "🐡 Você fisgou um *peixe raro*, com escamas brilhando chakra!\nOs anciãos diriam que ele traz sorte.\n💎+15🧧 pontos!";
     } else {
-        return "🦊 Um *peixe lendário*, com uma pequena cauda de chakra, surge na ponta da linha!\nVocê sente um poder estranho vindo dele...\n🏆 +100🧧 pontos!";
+        return "🐙 Um redemoinho surge na água... e dela emerge a *Oito Caudas (Gyūki)* disfarçada de peixe!\nSeu chakra é tão intenso que paralisa todos à sua volta.\nCom sorte, você escapa com um fragmento dela.\n🏆 +100🧧 pontos!";
     }
 }
 
