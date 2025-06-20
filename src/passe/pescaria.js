@@ -14,7 +14,7 @@ function Pescaria() {
     } else if (chance < 75) {
         return "💥 Um selo explodiu! Era um *Kibaku Fuda* preso à isca!\nVocê é arremessado alguns metros pra trás.\n-1💔 de vida!";
     } else if (chance < 80) {
-        return "🥷 Você ativou a técnica de *Roubo de Vara Ninja*!\nEscolha um jogador. O que ele pescar na vez dele, *você fica com o peixe!*\n🎯 Prepare-se...";
+        return "🥷 Sua vara enroscou na vara do seu colega ninja...\nAproveitando a confusão, você *rouba o último peixe pescado* por ele!\n🎯 Esperteza também é uma habilidade ninja!";
     } else if (chance < 87) {
         return "💰 Você pescou um *baú de tesouro* misterioso!\nDentro dele há um pergaminho antigo envolto em seda.\n✨+50🧧 pontos!";
     } else if (chance < 95) {
