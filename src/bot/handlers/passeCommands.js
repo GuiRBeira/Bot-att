@@ -1,4 +1,4 @@
-const { Pescaria } = require('../passe/pescaria.js');
+const { Pescaria } = require('../../passe/pescaria.js');
 
 const passeCommands = {
     '!pesca': async (sock, msg) => {
