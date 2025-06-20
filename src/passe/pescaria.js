@@ -1,0 +1,27 @@
+function Pescaria() {
+    const chance = Math.floor(Math.random() * 100);
+
+    if (chance < 15) {
+        return "🥾 Você pescou uma *bota velha*!\nEla está molhada, fedida e... cheia de lama.\n🪣 Nada acontece.";
+    } else if (chance < 40) {
+        return "🐟 Você fisgou um *peixe comum*!\nO cheiro de peixe assado já bateu na vila.\n +10🧧 pontos!";
+    } else if (chance < 45) {
+        return "🍢 Um *espetinho de carne* boiou até sua vara!\nVocê não hesita: come na hora e se sente revigorado.\n+1❤️ de vida!";
+    } else if (chance < 55) {
+        return "🌀 Você caiu em um *Genjutsu*!\nAchou que tinha pescado um biju... mas era tudo miragem.\n😵 Nada acontece.";
+    } else if (chance < 65) {
+        return "🐸 Um *sapo ninja de AmeGakure* pulou na sua linha!\nCom um golpe rápido, ele rouba o último peixe que você tinha pescado!\n💨 Último peixe perdido!";
+    } else if (chance < 75) {
+        return "💥 Um selo explodiu! Era um *Kibaku Fuda* preso à isca!\nVocê é arremessado alguns metros pra trás.\n-1💔 de vida!";
+    } else if (chance < 80) {
+        return "🥷 Você ativou a técnica de *Roubo de Vara Ninja*!\nEscolha um jogador. O que ele pescar na vez dele, *você fica com o peixe!*\n🎯 Prepare-se...";
+    } else if (chance < 87) {
+        return "💰 Você pescou um *baú de tesouro* misterioso!\nDentro dele há um pergaminho antigo envolto em seda.\n✨+50🧧 pontos!";
+    } else if (chance < 95) {
+        return "🐡 Você fisgou um *peixe raro*, com escamas brilhando chakra!\nOs anciãos diriam que ele traz sorte.\n💎+15🧧 pontos!";
+    } else {
+        return "🦊 Um *peixe lendário*, com uma pequena cauda de chakra, surge na ponta da linha!\nVocê sente um poder estranho vindo dele...\n🏆 +100🧧 pontos!";
+    }
+}
+
+module.exports = { Pescaria };

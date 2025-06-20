@@ -2,13 +2,14 @@
 const { DisconnectReason, makeWASocket, useMultiFileAuthState } = require('@whiskeysockets/baileys');
 
 // Group-IDS
-const { groupIds, vila, coliseu } = require('../config/group-ids');
+const { groupIds, vila, coliseu, passe } = require('../config/group-ids');
 
 // Funções de processamento de mensagens
 const { processVilaMessages } = require('./handlers/vilaCommands')
 const { processGameMessages , processSlotMachine, processRoulette } = require('./handlers/gameCommands')
 const { processCombo } = require('./handlers/comboCommands')
 const { processColiseuMessages } = require('./handlers/coliseuCommands')
+const { processPasseMessages } = require('./handlers/passeCommands');
 // aqui segue a vida normalmente
 
 function startBot() {
@@ -37,6 +38,9 @@ function startBot() {
         } 
         if (coliseu.includes(remoteJid)) {
             await processColiseuMessages(sock, msg, text);
+        }
+        if (passe.includes(remoteJid)) {
+            await processPasseMessages(sock, msg, text);
         }
         if (text.startsWith('!m')) {
             console.log('Mensagem recebida:', JSON.stringify(msg, null, 2));
