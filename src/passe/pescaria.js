@@ -18,7 +18,7 @@ function Pescaria() {
     } else if (chance < 85) {
         return "🌊 Um tentáculo gigantesco irrompe da água — *Gyūki está furioso*!\nEle lança uma Bijudama na sua direção.\n🔥 -2💔 de vida!";
     } else if (chance < 92) {
-        return "💰 Você pescou um *baú de tesouro* misterioso!\nDentro dele há um pergaminho antigo envolto em seda.\n✨+50🧧 pontos!";
+        return "💰 Você pescou um *baú de tesouro* misterioso!\n👀 Dentro dele há um pergaminho antigo envolto em seda.\n✨+50🧧 pontos!";
     } else if (chance < 98) {
         return "🐡 Você fisgou um *peixe raro*, com escamas brilhando chakra!\nOs anciãos diriam que ele traz sorte.\n💎+25🧧 pontos!";
     } else {
