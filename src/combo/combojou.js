@@ -187,8 +187,7 @@ function placaJFinal(nome, cla, rank, gasto = 0) {
   const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
   const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
 
-  return
-`
+  return `
 🔥🌽)°•➖➖🏮➖➖•°(🌽🔥
 🉑] Gui (🗯️🃏)
 🌽420 🍿700
