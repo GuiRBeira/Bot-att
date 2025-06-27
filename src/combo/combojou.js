@@ -191,11 +191,11 @@ function placaJFinal(nome, cla, rank, gasto = 0) {
 🔥🌽)°•➖➖🏮➖➖•°(🌽🔥
 🉑] Gui (🗯️🃏)
 🌽420 🍿700
-* Kagayaki no Kengen
-* Erementaru Ora 1/3
-* Fuin no Feudal
-* Yoton
-* Senjutsu 1/2 1/4
+* Kagayaki no Kengen 🌟💱 
+* Erementaru Ora 1/3 🌪️💱
+* Fuin no Feudal 🃏
+* Yoton 🗯️
+* Senjutsu 🦊 1/2 1/4
 •    27/06/25 São João 💥
 🧈|.°•➖•➖•🆚•➖•➖•°.|🧈
 🉑] ${nome} (${cla}${rank})
