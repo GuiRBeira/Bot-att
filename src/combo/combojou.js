@@ -4,38 +4,25 @@ function placaJInicial(nome, cla, rank) {
   const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
   const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
   const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
-/**○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*
-*${rank} ⟦❝ ${cla} ${nome} ${cla} ❞ ⟧ ${rank}*
-*❰ ❤ 400 ❤ ❱ ♧ ❰ 🔹 800 🔹 ❱*
-●
-●
-●
-●
-      *🃏⟦❝🗯 Gui 🗯❞ ⟧🃏*
-*❰ ❤ 400 ❤ ❱ ♧ ❰ 🔹 800 🔹 ❱*
-●
-●
-●
-●
-*○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○**/
   return `
-  ⊹₊˚🤱🏽 ${nome} ${cla}${rank}✦
-  400 💖 • 800 👑
-  .
-  .
-  .
-  💐 ${dia}/${mes}/${ano} 💫
-  
-  ˚˳⊹🤱🏻★ Gui . 🗯🃏୧
-  400 💖 • 800 👑 
-  .
-  . 
-  .
-  ⊰❀ Feliz Dia das Mães ❀⊱
+🔥🌽)°•➖➖🏮➖➖•°(🌽🔥
+🉑] Gui (🗯️🃏)
+🌽400 🍿800
+•
+•
+•
+•    27/06/25 São João 💥
+🧈|.°•➖•➖•🆚•➖•➖•°.|🧈
+🉑] ${nome} (${cla}${rank})
+_🌽400 🍿800_
+•
+•
+•
+🔥🌽)°•➖➖🏮➖➖•°(🌽🔥
 *🃏 (•🎓Fūin No Feudal🎓•)🃏*
-          _(💫Selo Feudal³💫)_
+          _(💫Selo Feudal💫)_
 
-❕❮•💢❝ ATIVAÇÃO V3❞💢•❯❕
+❕❮•💢❝ ATIVAÇÃO V1❞💢•❯❕
 ➖➖➖➖➖➖➖➖➖➖➖
 🌧💥 🚀 ⛈ ☁✨🦅🌧 🌙 ☁
   ☁🌧🔸🌈  ⃪☁⃪((💫🍂 💥 🌧
@@ -46,9 +33,6 @@ function placaJInicial(nome, cla, rank) {
 〰Ҩ ❱▫° •🚫❯🃏❮🚫• °▫❰ Ҩ〰
 🎋🐚🍃🕳🍄🐿🥀🐾🍃🎋🌻
 ➖➖➖➖➖➖➖➖➖➖➖
-
-*• Aumenta ❪ +100%🔹❫ De Chakra ❕*
-*• Aumenta ❪ +100%❣❫ De Hp ❕*
 
 ❰🃏🎓✴❱❪ Descrição ❫ : Após muito anos de treinamento, o Feudal muito experiente, consegue a habilidade de criar um poderoso selo. Esse selo ao ser Ativado é capaz de aprimorar as habilidades de seu usuário, tornando mais refinado as técnicas usada por seu portador.
 *➖ ❪ +70%🔹❫ Danos Em Ninjutsus❕*
@@ -203,25 +187,26 @@ function placaJFinal(nome, cla, rank, gasto = 0) {
   const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
   const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
 
-  return `
-➖ 𖤓 • ➖ 🪇 ⌯ 🎇 ⌯ 🪇 ➖ • 𖤓 ➖
-
-        🧑‍🌾 ⋅˚₊‧ Gui 🗯🃏⋅ ♪ ˚₊‧🍻
-     「420 🤍 ✦͜͡🪗 700 🥜 」
-. Kagayaki no Kengen 🌟💱 +10🔺
-. Erementaru Ōra 🌪️ 1/3 +30🔺
-. Fūin No Feudal 🃏 +70🔺
-. Yōton 🗯 +70🔹 +70🔺 -30🔹
-. Kyūbi Senjutsu +20❤🔹 1/2 +10🔺 1/4
-_・🌽﹐ ${dia}/${mes}/${ano} ♪ . ✨_
-
-         👩‍🌾 ⋅˚₊‧ ${nome} ${cla}${rank}⋅ ♪ ˚₊‧🍻
-     「0 🤍 ✦͜͡🪗 ${800-gasto} 🥜 」
+  return
+`
+🔥🌽)°•➖➖🏮➖➖•°(🌽🔥
+🉑] Gui (🗯️🃏)
+🌽420 🍿700
+* Kagayaki no Kengen
+* Erementaru Ora 1/3
+* Fuin no Feudal
+* Yoton
+* Senjutsu 1/2 1/4
+•    27/06/25 São João 💥
+🧈|.°•➖•➖•🆚•➖•➖•°.|🧈
+🉑] ${nome} (${cla}${rank})
+🌽400 🍿${800-gasto}
 •
 •
 •
-➖ 𖤓 • ➖ 🪇 ⌯ 🎇 ⌯ 🪇 ➖ • 𖤓 ➖
-`;
+🔥🌽)°•➖➖🏮➖➖•°(🌽🔥
+`
+;
 }
 
 module.exports = {
