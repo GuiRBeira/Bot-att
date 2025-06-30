@@ -36,7 +36,7 @@ async function getOrigem() {
 
     if (lock.ativo) {
       console.log(`❌ Bot já está ativo no dispositivo: ${lock.origem}`);
-      process.exit();
+      //process.exit();
     }
 
     lock.ativo = true;
