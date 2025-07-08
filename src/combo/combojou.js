@@ -5,38 +5,60 @@ function placaJInicial(nome, cla, rank) {
   const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
   const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
   return `
-  *╭➖•➖🏳‍⚧ᜰ(❪💓❫)ᜰ🏳‍⚧➖•➖╮*
-  *•°🦄𐓆 ⊹ Gui ⧼🗯️🃏⧽    ҉*
-  ꒷꒦⟦   ҈400•🍓⟧🌈⟦🦋•800   ҉⟧꒦꒷
-💞·࣭࣪̇˖.➜
-✨·࣭࣪̇˖.➜
-💞·࣭࣪̇˖.➜
-     *❰📆•💗૪30/06/2025૪💗•📆❱*     
-  *•°🦄𐓆 ⊹ ${nome} ⧼${cla}${rank}⧽    ҉*
-  ꒷꒦⟦   ҈400•🍓⟧🌈⟦🦋•${800}   ҉⟧꒦꒷
-💞·࣭࣪̇˖.➜ 
-✨·࣭࣪̇˖.➜
-💞·࣭࣪̇˖.➜
-   *ᯏ❣️Tσ∂σ Aɱσɾ é Vάℓเ∂σ❣️ᯟ*
-*╰➖•➖🏳️‍🌈ᜰ(❪💓❫)ᜰ🏳️‍🌈➖•➖╯*
-*🃏 (•🎓Fūin No Feudal🎓•)🃏*
-          _(💫Selo Feudal💫)_
+🔘)➖➖➖🔺⚖️🔻➖➖➖(🔘
+            
+    _*Gui 🗯️🃏👨🏻‍⚖⚖️》*_
+      ~400❤‍🔥|800🩵~
+[•
+[•
+[•
 
-❕❮•💢❝ ATIVAÇÃO V1❞💢•❯❕
+💱〰️〰️〰️08/07/25〰️〰️〰️💱
+
+    _*《${nome} ${cla}${rank}👨🏻‍⚖⚖️》*_
+      ~400❤‍🔥|800🩵~
+[•
+[•
+[•
+
+🔘)➖➖➖🔺⚖️🔻➖➖➖(🔘
+
+*☢️🌪️❪ Ame no Habakiri ❫🌪️☢️*
+           _❪ Ame no Habakiri ❫_ 
+
+            *✨❪• Ativação •❫✨*
 ➖➖➖➖➖➖➖➖➖➖➖
-🌧💥 🚀 ⛈ ☁✨🦅🌧 🌙 ☁
-  ☁🌧🔸🌈  ⃪☁⃪((💫🍂 💥 🌧
-〰Ҩ ❱▫° •🚫❯🃏❮🚫• °▫❰ Ҩ〰
-• ❪🃏❫ • ᔙ🔹❞  😌  ❝🔹ᔘ • ❪🃏❫ •
-🎓 ___ ₰ ➰)) °' 🙏'° ((➰ ₰ ___ 🎓
-• ❪🃏❫ • ᔗ🔹❞  🎓  ❝🔹ᔚ • ❪🃏❫ •
-〰Ҩ ❱▫° •🚫❯🃏❮🚫• °▫❰ Ҩ〰
-🎋🐚🍃🕳🍄🐿🥀🐾🍃🎋🌻
+✨  ☄️☁️  🌘☁️☁️  🎇☁️ 🍂☁️ 
+  ☄️☁️  ☁️🍂☁️  🌿🍂 ☁️🌧️💫
+＿＿//🧧    Ꮺ🐞  ＿＿//🎉   🌿Ꮺ.
+ ໒🎐੭▫️ᯤ ⸉·⸊ 🟡 ⸉·⸊ ᯤ ▫️໒🎐੭
+   ━━•••·✨𐔟 •💢 " 💢• 𐔟 ✨·•••━━ 
+ᯓ 🌪️ °°➿ •• 〃⚔️〃 •• ➿ °° 🌪️ ᯓ
+  ⤹🟡⤾ ꔛ ◻️" (🤪) " ◻️ ꔛ ⤿🟡⤸
+💢• 𐔟 ✨·•••━━ ") (" ━━•••·✨𐔟 •💢
+ᯓ 🌪️ °°➿ •• 〃/ 𐆛〃 •• ➿ °° 🌪️ ᯓ
+   ━━•••·✨𐔟 •💢 " 💢• 𐔟 ✨·•••━━ 
+ ໒🎐੭▫️ᯥ ⸊·⸉ 🟡 ⸊·⸉ ᯥ ▫️໒🎐੭
+🌿🪾🌿🌾🥀🌾🌻🌿🌿🪾🌿
 ➖➖➖➖➖➖➖➖➖➖➖
 
-❰🃏🎓✴❱❪ Descrição ❫ : Após muito anos de treinamento, o Feudal muito experiente, consegue a habilidade de criar um poderoso selo. Esse selo ao ser Ativado é capaz de aprimorar as habilidades de seu usuário, tornando mais refinado as técnicas usada por seu portador.
-*➖ ❪ +70%🔹❫ Danos Em Ninjutsus❕*
-*➖ ❪ +70%🔺❫ Danos Em Taijutsus❕*
+*ꮺ Chakra ❪ -30%🔹 ❫ por Turno*
+*ꮺ Aumenta: ❪ 70%🔹 ❫ em Ninjutsus Fuuton❗*
+*᯽ Aumenta: ❪ 70%🔺 ❫ em Taijutsus❗*
+
+*❪☢️🌪️✴️❫❰ Descrição ❱:* Ao alcançar o nível final de poder, a Ame no Habakiri transcende sua função de lâmina e se converte em um verdadeiro legado de domínio sobre o elemento vento, tornando-se uma força natural incomparável. Esta katana, que apenas Guilherme Kyūsuke possui, carrega uma aura antiga e devastadora, como se o próprio céu e tempestades ancestrais residissem em seu aço. Sua lâmina, longa e fina, ganha um brilho espectral, com correntes sutis de vento fluindo ao redor, criando um leve sussurro que, ao concentrar chakra, pode amplificar-se até um grito ameaçador, como o rugido de uma tempestade iminente.
+
+Ao empunhar a Ame no Habakiri neste estágio, Guilherme Kyūsuke se torna o caçador supremo. A katana agora rastreia e detecta qualquer técnica de ocultação, incluindo camuflagens avançadas e substituições, dissolvendo ilusões e expurgando qualquer disfarce. Inimigos que tentam se esconder ou fugir são imediatamente encontrados, como se a lâmina tivesse uma conexão sensorial que rastreia o fluxo de chakra ao redor, detectando a presença de qualquer um que tente escapar. Ao ativar essa habilidade, a espada emite um som cortante, e seus movimentos no ar parecem traçar um rastro translúcido, como se as correntes de ar guiassem o usuário até o inimigo.
+
+Além disso, a Ame no Habakiri concede imunidade total contra genjutsu, tornando inútil qualquer tentativa de manipulação mental. Ela possui uma defesa natural contra ilusões, dissipando-as ao detectar a mais sutil distorção no fluxo de chakra, protegendo a mente do usuário com uma barreira de vento invisível que repele qualquer invasão. Em combate corpo a corpo, o usuário torna-se intocável para taijutsu: golpes físicos contra ele são dispersados, como se fossem quebrados pelo ar turbilhonante ao redor da espada, criando uma defesa quase absoluta contra técnicas de combate direto.
+
+Essa lâmina não só protege, mas também repele um dos elementos mais mortais, o raiton. Ao encontrar ataques do elemento relâmpago, a Ame no Habakiri gera uma camada de vento denso e pressurizado ao redor de sua lâmina, que neutraliza as cargas elétricas, dissipando-as no ar. Grandes investidas de raios são fragmentadas, tornando-se faíscas inofensivas, enquanto golpes pesados de raiton se dissipam ao contato, tornando o portador imune a muitos ataques de energia elétrica.
+
+A habilidade de controle sobre o fuuton chega ao seu ápice: Guilherme agora pode manipular ventos de diferentes intensidades, desde uma brisa silenciosa que o ajuda a camuflar seus movimentos até rajadas violentas que podem cortar e esmagar o que estiver ao seu alcance. Este controle permite também combinar seu chakra com o vento, gerando lâminas de ar que acompanham seus golpes, ampliando seu alcance e precisão. Ao concentrar-se, Guilherme pode liberar um vendaval devastador, expandindo a zona de combate com uma tempestade implacável que esmaga seus oponentes em meio a uma série de ataques simultâneos, controlando a velocidade e a intensidade da tormenta como um maestro.
+
+Ame no Habakiri não é mais apenas uma katana; tornou-se uma extensão do próprio espírito de Guilherme Kyūsuke, uma força indomável de ventos cortantes e protetores, representando tanto a fúria quanto a serenidade dos céus.
+*➖ Imune a Fugas, Camuflagens e Taijutsu ❗*
+*➖ Imune a Raiton até 150%🔹❗*
 *💱⟦🌟❰ 絶対輝きの顕現 : Zettai Kagayaki no Kengen ❱🌟⟧💱*
 _𐔟 ⟮Manifestação da Radiância Absoluta⟯ 𐔟_
 
@@ -206,23 +228,25 @@ function placaJFinal(nome, cla, rank, gasto = 0) {
   //🔥🌽)°•➖➖🏮➖➖•°(🌽🔥
   //`
   return `
-  *╭➖•➖🏳‍⚧ᜰ(❪💓❫)ᜰ🏳‍⚧➖•➖╮*
-  *•°🦄𐓆 ⊹ Gui ⧼🗯️🃏⧽    ҉*
-  ꒷꒦⟦   ҈420•🍓⟧🌈⟦🦋•700   ҉⟧꒦꒷
-💞·࣭࣪̇˖.➜ Kagayaki no Kengen 🌟💱 
-✨·࣭࣪̇˖.➜ Erementaru Ora 1/3 🌪️💱
-💞·࣭࣪̇˖.➜ Fuin no Feudal 🃏
-✨·࣭࣪̇˖.➜ Senjutsu 🦊 1/2 1/4
-💞·࣭࣪̇˖.➜ Yoton 🗯️
-    
-     *❰📆•💗૪30/06/2025૪💗•📆❱*     
-  *•°🦄𐓆 ⊹ ${nome} ⧼${cla}${rank}⧽    ҉*
-  ꒷꒦⟦   ҈0•🍓⟧🌈⟦🦋•${800-gasto}   ҉⟧꒦꒷
-💞·࣭࣪̇˖.➜ 
-✨·࣭࣪̇˖.➜
-💞·࣭࣪̇˖.➜
-   *ᯏ❣️Tσ∂σ Aɱσɾ é Vάℓเ∂σ❣️ᯟ*
-*╰➖•➖🏳️‍🌈ᜰ(❪💓❫)ᜰ🏳️‍🌈➖•➖╯*
+🔘)➖➖➖🔺⚖️🔻➖➖➖(🔘
+            
+    _*Gui 🗯️🃏👨🏻‍⚖⚖️》*_
+      ~420❤‍🔥|670🩵~
+[•Kagayaki no Kengen 🌟💱 
+[•Erementaru Ora 1/3 🌪️💱
+[•Ame no Habakiri 🌪️☢️
+[•Senjutsu 🦊 1/2 1/4
+[•Yoton 🗯️
+
+💱〰️〰️〰️08/07/25〰️〰️〰️💱
+
+    _*《${nome} ${cla}${rank}👨🏻‍⚖⚖️》*_
+      ~0❤‍🔥|${800-gasto}🩵~
+[•
+[•
+[•
+
+🔘)➖➖➖🔺⚖️🔻➖➖➖(🔘
 ` 
   ;
 }
