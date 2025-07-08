@@ -6,20 +6,20 @@ const { groupIds, vila, coliseu, passe } = require('../config/group-ids');
 
 // Funções de processamento de mensagens
 const { processVilaMessages } = require('./handlers/vilaCommands')
-const { processGameMessages , processSlotMachine, processRoulette } = require('./handlers/gameCommands')
+const { processGameMessages, processSlotMachine, processRoulette } = require('./handlers/gameCommands')
 const { processCombo } = require('./handlers/comboCommands')
 const { processColiseuMessages } = require('./handlers/coliseuCommands')
 const { processPasseMessages } = require('./handlers/passeCommands');
 // aqui segue a vida normalmente
 
 function startBot() {
-        
+
     // Função principal de processamento de mensagens
     async function processMessage(sock, msg) {
         const text = msg.message?.conversation || msg.message?.extendedTextMessage?.text || '';
         const playerJid = msg.key.participant;
         const remoteJid = msg.key.remoteJid;
-    
+
         if (remoteJid.endsWith('@s.whatsapp.net')) {
             // A mensagem é de uma conversa privada
             await processCombo(sock, msg, text);
@@ -35,7 +35,7 @@ function startBot() {
             if (text.startsWith('!roleta')) {
                 await processRoulette(sock, msg, text);
             }
-        } 
+        }
         if (coliseu.includes(remoteJid)) {
             await processColiseuMessages(sock, msg, text);
         }
@@ -46,7 +46,7 @@ function startBot() {
             console.log('Mensagem recebida:', JSON.stringify(msg, null, 2));
         }
     }
-    
+
     // Conexão ao WhatsApp
     async function connectToWhatsApp() {
         const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
@@ -54,7 +54,7 @@ function startBot() {
             printQRInTerminal: true,
             auth: state
         });
-    
+
         sock.ev.on('connection.update', (update) => {
             const { connection, lastDisconnect } = update;
             if (connection === 'close') {
@@ -67,23 +67,28 @@ function startBot() {
                 console.log('opened connection');
             }
         });
-    
+
         sock.ev.on('creds.update', saveCreds);
-    
+
         sock.ev.on('messages.upsert', async (m) => {
             const msg = m.messages[0];
 
-            // Filtro: ignora mensagens de sistema, bots ou tipos desconhecidos
-            if (!msg.message || msg.message.protocolMessage) {
-                return;
-            }
-        
+            // Ignora mensagens sem conteúdo útil ou de sistema
+            if (!msg.message || msg.message.protocolMessage) return;
+
+            // Ignora mensagens muito antigas (por exemplo, >30 segundos de diferença)
+            const msgTimestamp = msg.messageTimestamp;
+            const now = Math.floor(Date.now() / 1000); // segundos
+
+            if (now - msgTimestamp > 30) return;
+
             try {
                 await processMessage(sock, msg);
             } catch (err) {
                 console.error('Erro ao processar mensagem:', err);
             }
         });
+
     }
     // Executa a função principal
     connectToWhatsApp();
