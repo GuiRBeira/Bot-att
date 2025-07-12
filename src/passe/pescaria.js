@@ -2,19 +2,19 @@ function Pescaria() {
     const chance = Math.floor(Math.random() * 100);
 
     if (chance < 15) {
-        return "🥾 Você pescou uma *bota velha*!\nEla está molhada, fedida e... cheia de lama.\n🪣 Nada acontece.";
+        return "🥾 Você pescou uma *bota velha*!\nEla está molhada, fedida e... cheia de lama.\n🪣 Nada acontece. (mas pelo menos não explodiu)";
     } else if (chance < 40) {
         return "🐟 Você fisgou um *peixe comum*!\nO cheiro de peixe assado já bateu na vila.\n+10🧧 pontos!";
     } else if (chance < 45) {
-        return "🍢 Um *espetinho de carne* boiou até sua vara!\nVocê não hesita: come na hora e se sente revigorado.\n+1❤️ de vida!";
+        return "🍢 Um *espetinho de carne* boiou até sua vara!\nVocê come sem pensar duas vezes.\n+1❤️ de vida!";
     } else if (chance < 55) {
-        return "🌀 Você caiu em um *Genjutsu*!\nAchou que tinha pescado um biju... mas era tudo miragem.\n😵 Você fica atordoado e *perde a próxima rodada*!";
+        return "🧨 Você encontrou uma *Bomba Ninja* submersa!\nVocê poderá escolher um jogador para receber -1💔 de dano.\n🎯 Use com sabedoria (ou não).";
     } else if (chance < 65) {
         return "🐸 Um *sapo ninja de AmeGakure* pulou na sua linha!\nCom um golpe rápido, ele rouba o último peixe que você tinha pescado!\n💨 Último peixe perdido!";
     } else if (chance < 75) {
-        return "💥 Um selo explodiu! Era um *Kibaku Fuda* preso à isca!\nVocê é arremessado alguns metros pra trás.\n-1💔 de vida!";
+        return "💥 Um selo explosivo estava preso à isca!\nA explosão te atinge em cheio.\n-1💔 de vida!";
     } else if (chance < 80) {
-        return "🥷 Sua vara enroscou na vara do seu colega ninja...\nAproveitando a confusão, você *rouba o último peixe pescado* por ele!\n🎯 Esperteza também é uma habilidade ninja!";
+        return "🥷 Sua vara enroscou na vara do seu colega ninja...\nVocê aproveita para *roubar o último peixe pescado* por ele!\n🎯 Esperteza também é uma habilidade ninja.";
     } else if (chance < 85) {
         return "🌊 Um tentáculo gigantesco irrompe da água — *Gyūki está furioso*!\nEle lança uma Bijudama na sua direção.\n🔥 -2💔 de vida!";
     } else if (chance < 92) {
