@@ -1,5 +1,5 @@
 // Core / Libs
-const { DisconnectReason, makeWASocket, useMultiFileAuthState } = require('@whiskeysockets/baileys');
+const { DisconnectReason, makeWASocket, useMultiFileAuthState } = require('baileys');
 
 // Group-IDS
 const { groupIds, vila, coliseu, passe } = require('../config/group-ids');
