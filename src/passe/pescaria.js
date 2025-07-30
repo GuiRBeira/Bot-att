@@ -4,7 +4,7 @@ function Pescaria() {
     if (chance < 15) {
         return "🥾 Você pescou uma *bota velha*!\nEla está molhada, fedida e... cheia de lama.\n🪣 Nada acontece. (mas pelo menos não explodiu)";
     } else if (chance < 40) {
-        return "🐟 Você fisgou um *peixe comum*!\nO cheiro de peixe assado já bateu na vila.\n+10🧧 pontos!";
+        return "🐟 Você fisgou um *peixe comum*!\nO cheiro de peixe assado já bateu na vila.\n+5🕋 pontos!";
     } else if (chance < 45) {
         return "🍢 Um *espetinho de carne* boiou até sua vara!\nVocê come sem pensar duas vezes.\n+1❤️ de vida!";
     } else if (chance < 55) {
@@ -18,11 +18,11 @@ function Pescaria() {
     } else if (chance < 85) {
         return "🌊 Um tentáculo gigantesco irrompe da água — *Gyūki está furioso*!\nEle lança uma Bijudama na sua direção.\n🔥 -2💔 de vida!";
     } else if (chance < 92) {
-        return "💰 Você pescou um *baú de tesouro* misterioso!\n👀 Dentro dele há um pergaminho antigo envolto em seda.\n✨+50🧧 pontos!";
+        return "💰 Você pescou um *baú de tesouro* misterioso!\n🎴 Dentro dele há um *vale de 5% de desconto* em qualquer compra no mercado!\n(Use com sabedoria — é único!)";
     } else if (chance < 98) {
-        return "🐡 Você fisgou um *peixe raro*, com escamas brilhando chakra!\nOs anciãos diriam que ele traz sorte.\n💎+25🧧 pontos!";
+        return "🐡 Você fisgou um *peixe raro*, com escamas brilhando chakra!\nOs anciãos diriam que ele traz sorte.\n💎 +10🕋 pontos!";
     } else {
-        return "🐙 Um redemoinho surge na água... e dela emerge a *Oito Caudas (Gyūki)* disfarçada de peixe!\nSeu chakra é tão intenso que paralisa todos à sua volta.\nCom sorte, você escapa com um fragmento dela.\n🏆 +100🧧 pontos!";
+        return "🐙 Um redemoinho surge na água... e dela emerge a *Oito Caudas (Gyūki)* disfarçada de peixe!\nSeu chakra é tão intenso que paralisa todos à sua volta.\nCom sorte, você escapa com um fragmento dela.\n🏆 +25🕋 pontos!";
     }
 }
 

@@ -20,7 +20,9 @@ module.exports = {
     passe: [
       '120363419587670596@g.us',
       '120363418978503809@g.us',
-      '556384043631-1485535224@g.us', // academia 
+      '556384043631-1485535224@g.us', // academia
+      '120363301387431896@g.us', //mercado negro
+      '554888043300@s.whatsapp.net', // bruna mercado
     ]
   }
   
