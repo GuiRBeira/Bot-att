@@ -1,5 +1,6 @@
 // Core / Libs
 const { DisconnectReason, makeWASocket, useMultiFileAuthState } = require('baileys');
+const qrcode = require('qrcode-terminal'); // NOVO
 
 // Group-IDS
 const { groupIds, vila, coliseu, passe } = require('../config/group-ids');
@@ -10,18 +11,14 @@ const { processGameMessages, processSlotMachine, processRoulette } = require('./
 const { processCombo } = require('./handlers/comboCommands')
 const { processColiseuMessages } = require('./handlers/coliseuCommands')
 const { processPasseMessages } = require('./handlers/passeCommands');
-// aqui segue a vida normalmente
 
 function startBot() {
-
-    // Função principal de processamento de mensagens
     async function processMessage(sock, msg) {
         const text = msg.message?.conversation || msg.message?.extendedTextMessage?.text || '';
         const playerJid = msg.key.participant;
         const remoteJid = msg.key.remoteJid;
 
         if (remoteJid.endsWith('@s.whatsapp.net')) {
-            // A mensagem é de uma conversa privada
             await processCombo(sock, msg, text);
         }
         if (remoteJid === vila) {
@@ -47,24 +44,29 @@ function startBot() {
         }
     }
 
-    // Conexão ao WhatsApp
     async function connectToWhatsApp() {
         const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
         const sock = makeWASocket({
-            printQRInTerminal: true,
             auth: state
+            // printQRInTerminal removido
         });
 
         sock.ev.on('connection.update', (update) => {
-            const { connection, lastDisconnect } = update;
+            const { connection, lastDisconnect, qr } = update;
+
+            if (qr) {
+                console.log('🔑 Escaneie o QR abaixo para conectar:');
+                qrcode.generate(qr, { small: true }); // exibe o QR manualmente
+            }
+
             if (connection === 'close') {
-                const shouldReconnect = (lastDisconnect.error)?.output?.statusCode !== DisconnectReason.loggedOut;
-                console.log('connection closed due to ', lastDisconnect.error, ', reconnecting ', shouldReconnect);
+                const shouldReconnect = (lastDisconnect?.error)?.output?.statusCode !== DisconnectReason.loggedOut;
+                console.log('🔌 Conexão encerrada. Reconectar?', shouldReconnect);
                 if (shouldReconnect) {
                     connectToWhatsApp();
                 }
             } else if (connection === 'open') {
-                console.log('opened connection');
+                console.log('✅ Conectado com sucesso!');
             }
         });
 
@@ -72,14 +74,10 @@ function startBot() {
 
         sock.ev.on('messages.upsert', async (m) => {
             const msg = m.messages[0];
-
-            // Ignora mensagens sem conteúdo útil ou de sistema
             if (!msg.message || msg.message.protocolMessage) return;
 
-            // Ignora mensagens muito antigas (por exemplo, >30 segundos de diferença)
             const msgTimestamp = msg.messageTimestamp;
-            const now = Math.floor(Date.now() / 1000); // segundos
-
+            const now = Math.floor(Date.now() / 1000);
             if (now - msgTimestamp > 30) return;
 
             try {
@@ -88,9 +86,8 @@ function startBot() {
                 console.error('Erro ao processar mensagem:', err);
             }
         });
-
     }
-    // Executa a função principal
+
     connectToWhatsApp();
 }
 
