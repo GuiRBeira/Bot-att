@@ -222,9 +222,38 @@ __ Ҩ❄ 🗡°🗡❄Ҩ___   •°🖐🏻\`\`) (
 *➖Skin❕*`;
 }
 
+function getAtkDef(){
+  return `
+*♍🎭 ❪ Shizen No Masuku ❫ 🎭♍*
+       _( Máscaras Das Naturezas )_
+
+➖➖➖➖➖➖➖➖➖➖➖
+☁️ 🌨️☁️✨ ☁️ ☁️ ☀️ ☁️🌈⛈️
+ ☁️ 🛩️°☁️ 🌧️🌘 ⛈️ ⛈️🍂✨☁️ 
+🍃 ___/ / 🕊️ ꮺ  🌿 ___  🕊️ ꮺ  __ 🍃
+Ҩ 💢 ❪ ✨ 𖥨֗ 🔹 ___ 🔹 𖥨֗ ✨ ❫ 💢 Ҩ
+ ➰ ━━┉  ❮ • 🎭  ❛ ❜  🎭 • ❯  ┉━━ ➰
+🃏|  ⦅ 🔥 ⦆ ❕°  😌   °❕ ⦅ 💧 ⦆ |🃏
+彡 • ➿➿ .• ▫️ 🙏🏻 ▫️ •. ➿➿ • 彡
+▫️💫 地 💢 ❪ ⇧ 🎭 ⇧ ❫ 💢 地 💫 ▫️
+🃏| ⦅ 🌪️ ⦆ ✨ ➿➿ ✨ ⦅ ⚡ ⦆  |🃏
+➰ ━━┉  ❮ 🔹 ⦅ 🔸 ⦆ 🔹 ❯  ┉━━ ➰
+🌾🥀🌾🍄🐈‍⬛🎋🌾🐚🔸🥀🌾
+➖➖➖➖➖➖➖➖➖➖➖
+
+*• Chakra ❪ 50%🔹❫*  
+*• Dano ❪ 50%🔺❫*  
+
+*❪♍🎭❫❰ Descrição ❱:* As máscaras, forjadas a partir de minerais raros e imbuídas de chakra, representavam cada um dos elementos: *Fogo, Água, Terra, Vento e Raio.* Quando o Ninja as vestia uma atrás da outra, ele se tornava uma extensão da própria natureza, capaz de controlar os elementos com uma precisão e força sem igual. Ao iniciar a dança, o ninja executava uma sequência complexa de movimentos, sincronizando-os com a respiração e a concentração de chakra. Cada máscara, ao ser colocada, amplificava um dos seus sentidos e habilidades, que o permitia atacar seus inimigos e se defender usando combinações dos elementos.
+*➖ Ataque & Defesa❕*
+  `;
+}
+
 module.exports = {
     placaInicial,
     placaCombo,
     placaFinal,
     getKunais,
+    getAtkDef,
+    
 };
