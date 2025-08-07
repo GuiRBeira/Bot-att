@@ -23,6 +23,10 @@ module.exports = {
       '556384043631-1485535224@g.us', // academia
       '120363301387431896@g.us', //mercado negro
       '554888043300@s.whatsapp.net', // bruna mercado
+    ],
+    arenaspublicas: [
+      '120363294193453338@g.us', // arena ninja
+      '120363295275504328@g.us', // arena superior
     ]
   }
   
