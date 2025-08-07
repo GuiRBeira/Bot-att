@@ -1,5 +1,5 @@
 // Combos
-const { placaInicial, placaCombo, placaFinal, getKunais, getAtkDef } = require('../../combo/combochu');
+const { placaInicial, placaCombo, placaFinal, getKunais, getAtkDef, getAtkDef3r, getAtkDef3r1 } = require('../../combo/combochu');
 const { placaJInicial, placaJFinal } = require('../../combo/combojou');
 
 const comboCommands = {
@@ -10,6 +10,8 @@ const comboCommands = {
     '/pji': placaJInicial,
     '/pjf': placaJFinal,
     '/atkdef': getAtkDef,
+    '/atkdef3r': getAtkDef3r,
+    '/atkdef3r1': getAtkDef3r1,
 };
 
 async function processCombo(sock, msg, text) {

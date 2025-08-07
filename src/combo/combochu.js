@@ -249,11 +249,67 @@ function getAtkDef(){
   `;
 }
 
+function getAtkDef3r(){
+  return `
+*♍✋🏻❪ Arayuru Naru Yashinoki ❫ ✋🏻♍*
+  _( Palmas De Todos Elementos V2 )_
+
+➖➖➖➖➖➖➖➖➖➖➖
+☁️ 🌨️☁️✨ ☁️ ☁️ ☀️ ☁️🌈⛈️
+ ☁️ 🛩️☁️ 🌧️🌘 ⛈️⛈️🍂✨☁️ 
+ ___ - 🦋 ( ❪  ___ 🕊️ ❝  🍃 • . ° 🕊️  ❝
+✨ ᨀ 🗯️ ⁾💢 ◟⟮ ⚡ ⟯◝ 💢⁽ 🗯️ ᨀ ✨
+ ___ ➰ ' ❪ 🔸 ❫  ' 😌 '  ❪ 🔸 ❫ ' ➰ ___
+ 🔺 ╲ ╲  • ✋🏻 ` ` 🙏🏻 ´ ´  🤚🏻 •  ╱ ╱ 🔺
+ ___ ⟮ 🌪️ ⟯  Ҩ ✨ 👐🏻 ✨ Ҩ  ⟮ 🌪️ ⟯ ___
+➿ '' 🖐🏻 ❪ 💧 ❫ • 🔺 • ❪ 💧 ❫ 🖐🏻 " ➿
+✨ ᨀ 🗯️ ⁾💢 ◟⟮ ⚡ ⟯◝ 💢⁽ 🗯️ ᨀ ✨
+🌾🥀🌾🍄🐈‍⬛🎋🌾🐚🔸🥀🌾
+➖➖➖➖➖➖➖➖➖➖➖
+
+*• Chakra ❪ 170%🔹❫* 
+*• Dano ❪ 170%🔺❫* 
+
+*❪♍✋🏻❫❰ Descrição ❱:* O ninja concentra os cinco elementos da natureza nas palmas, criando uma poderosa barreira que absorve o ataque inimigo. Em um movimento fluido, ele desfaz a barreira e, com velocidade impressionante, golpeia o peito do adversário com ambas as mãos carregadas de energia elemental. O impacto é devastador, caso o oponente ataque com taijutsu e sem defesa recebe um dano ainda maior.
+*➖ Ataque & Defesa❕*
+*➖ Dura Três Rounds❕*
+*➖Causa (+30%🔺) Em Taijutsu Se Atacado Sem Defesa❕*
+  `;
+}
+
+function getAtkDef3r1(){
+  return `
+*♍✨( Hōden Shibireru yōna )✨♍*
+             _( Descarga Eletrizante  )_            
+
+➖➖➖➖➖➖➖➖➖➖➖
+🍂🌧⛈🌒🍃☁✨☁🌩🌧☁️
+🌩❄☁🌧✨☁🍃☁💫🌧🌩️
+"" ➿°°💦 °°°💥 °° 💥°°° 💦°°➿ ""
+  ⊷  "⚡  □ °✨•🫧•✨° □  ⚡ " ⊶
+ 💦  •➿•   [⚡  🍃  ⚡]   •➿•  💦
+ ⚡  "➰"   [💥  😏  💥]   "➰"  ⚡
+ 💦   •➿•  [⚡  🙏  ⚡]  •➿•   💦
+  ⊷ ⚡ "  □° ✨•🫧•✨ °□  " ⚡ ⊶
+"" ➿°°💦 °°°💥 °° 💥°°° 💦°°➿ ""
+🌾🥀🌿🎋🌱🐞🍄🌷🌿🕳🌾
+➖➖➖➖➖➖➖➖➖➖➖
+
+*• Chakra: [ 170%🔹 ]*
+*• Danos: [ 170%🔺 ]*
+
+*(♍✨)❰ Descrição❱:* O ninja libera grande quantidade de chakra para realizar uma combinação de elementos *Suiton* e *Raiton* este espelhe água de sua boca criando uma grande barreira ao seu redor, este adiciona raios a em seu jutsu para torná-lo mortal, está cai sobre o  oponente o causa do muito dano devido ao grande poder combinado da água com eletricidade, causa *+30%🔺 de dano se adversário atacar sem defesa*. 
+*➖Ataque & Defesa❕*
+*➖ Dura Três Rounds❕*
+  `; 
+}
+
 module.exports = {
     placaInicial,
     placaCombo,
     placaFinal,
     getKunais,
     getAtkDef,
-    
+    getAtkDef3r,
+    getAtkDef3r1,
 };
