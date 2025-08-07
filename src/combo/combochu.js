@@ -1,11 +1,11 @@
 function placaInicial(nome, cla, rank) {
-    // Obtém a data atual
-    const data = new Date();
-    const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
-    const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
-    const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
+  // Obtém a data atual
+  const data = new Date();
+  const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
+  const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
+  const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
 
-    return `
+  return `
     🕉️○🎈🎉❳➿lı🎂ıl➿❲🎉🎈○🕉️
            \`𝐑𝐏𝐆 𝐍𝐚𝐫𝐮𝐭𝐨 𝐎𝐧𝐥𝐢𝐧𝐞\` 
                👑 \`10 Anos\` 👑
@@ -27,12 +27,12 @@ function placaInicial(nome, cla, rank) {
 }
 
 function placaCombo(nome, cla, rank, gasto) {
-    // Obtém a data atual
-    const data = new Date();
-    const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
-    const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
-    const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
-    return `*♍✋🏻❪ Arayuru Naru Yashinoki ❫ ✋🏻♍*
+  // Obtém a data atual
+  const data = new Date();
+  const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
+  const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
+  const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
+  return `*♍✋🏻❪ Arayuru Naru Yashinoki ❫ ✋🏻♍*
       _( Palmas De Todos Elementos V2 )_
 
 ➖➖➖➖➖➖➖➖➖➖➖
@@ -67,7 +67,7 @@ function placaCombo(nome, cla, rank, gasto) {
 ღ🎉
         _🎂${dia}/${mes}/${ano}🎂_
    *[(${nome} ${cla}${rank})]*
- *❤️0%❤️ ꮺ 🔹${600-gasto}%🔹*
+ *❤️0%❤️ ꮺ 🔹${600 - gasto}%🔹*
 ღ🎉
 ღ🎉
 ღ🎉
@@ -156,13 +156,13 @@ O consumo de chakra aumenta significativamente devido à complexidade e poder da
 }
 
 function placaFinal(nome, cla, rank, gasto) {
-    // Obtém a data atual
-    const data = new Date();
-    const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
-    const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
-    const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
+  // Obtém a data atual
+  const data = new Date();
+  const dia = String(data.getDate()).padStart(2, "0"); // Dia com dois dígitos
+  const mes = String(data.getMonth() + 1).padStart(2, "0"); // Mês (Janeiro = 0, então somamos 1)
+  const ano = String(data.getFullYear()).slice(-2); // Pega apenas os dois últimos dígitos do ano
 
-    return `
+  return `
     🕉️○🎈🎉❳➿lı🎂ıl➿❲🎉🎈○🕉️
            \`𝐑𝐏𝐆 𝐍𝐚𝐫𝐮𝐭𝐨 𝐎𝐧𝐥𝐢𝐧𝐞\` 
                👑 \`10 Anos\` 👑
@@ -174,7 +174,7 @@ function placaFinal(nome, cla, rank, gasto) {
 ღ🎉 Kyūbi Senjutsu +20❤🔹 1/2 +10🔺 1/4
         _🎂${dia}/${mes}/${ano}🎂_
    *[(${nome} ${cla}${rank})]*
- *❤️0%❤️ ꮺ 🔹${600-gasto}%🔹*
+ *❤️0%❤️ ꮺ 🔹${600 - gasto}%🔹*
 ღ🎉
 ღ🎉
 ღ🎉
@@ -182,26 +182,26 @@ function placaFinal(nome, cla, rank, gasto) {
 🕉️○🎈🎉❳➿lı🎂ıl➿❲🎉🎈○🕉️
     `
     ;
-  }
-  /*➖•➖🎊 ིྀ(❪🪅❫) ིྀ🎊➖•➖
-  *🥳° ₊${nome} ₊°${cla}${rank}° ₊*
-  *⧼0 🎂⧽🎁⧼${600-gasto} 🍭⧽*
-  🎈➺
-  ✨➺
-  🎈➺
-  
-  *❰📆•🪅૪${dia}/${mes}/${ano}૪🪅•📆❱* 
-   
-  *🥳° ₊Gui ₊°🗯🃏° ₊*
-  *⧼320 🎂⧽🎁⧼350 🍭⧽*
-  🎈➺ 🖐🏻 2/3
-  ✨➺ Ame no Habakiri ☢✳
-  🎈➺ Kyūbi Senjutsu +20❤🔹 1/2 +10🔺 1/4
-  ➖•➖🎊 ིྀ(❪🪅❫) ིྀ🎊➖•➖
-  */
-  
-  function getKunais() {
-    return `*🕉🗡( Taijutsu • Tenpesuta )🗡🕉*
+}
+/*➖•➖🎊 ིྀ(❪🪅❫) ིྀ🎊➖•➖
+*🥳° ₊${nome} ₊°${cla}${rank}° ₊*
+*⧼0 🎂⧽🎁⧼${600-gasto} 🍭⧽*
+🎈➺
+✨➺
+🎈➺
+ 
+*❰📆•🪅૪${dia}/${mes}/${ano}૪🪅•📆❱* 
+ 
+*🥳° ₊Gui ₊°🗯🃏° ₊*
+*⧼320 🎂⧽🎁⧼350 🍭⧽*
+🎈➺ 🖐🏻 2/3
+✨➺ Ame no Habakiri ☢✳
+🎈➺ Kyūbi Senjutsu +20❤🔹 1/2 +10🔺 1/4
+➖•➖🎊 ིྀ(❪🪅❫) ིྀ🎊➖•➖
+*/
+
+function getKunais() {
+  return `*🕉🗡( Taijutsu • Tenpesuta )🗡🕉*
  ✨( Chuva De Kunais Congelada )✨
 ➖➖➖➖➖➖➖➖➖➖➖
 ☁✨☁🌨❄🌪☁🚁☁🌨☁
@@ -222,7 +222,7 @@ __ Ҩ❄ 🗡°🗡❄Ҩ___   •°🖐🏻\`\`) (
 *➖Skin❕*`;
 }
 
-function getAtkDef(){
+function getAtkDef() {
   return `
 *♍🎭 ❪ Shizen No Masuku ❫ 🎭♍*
        _( Máscaras Das Naturezas )_
@@ -249,7 +249,7 @@ function getAtkDef(){
   `;
 }
 
-function getAtkDef3r(){
+function getAtkDef3r() {
   return `
 *♍✋🏻❪ Arayuru Naru Yashinoki ❫ ✋🏻♍*
   _( Palmas De Todos Elementos V2 )_
@@ -277,7 +277,7 @@ function getAtkDef3r(){
   `;
 }
 
-function getAtkDef3r1(){
+function getAtkDef3r1() {
   return `
 *♍✨( Hōden Shibireru yōna )✨♍*
              _( Descarga Eletrizante  )_            
@@ -301,15 +301,40 @@ function getAtkDef3r1(){
 *(♍✨)❰ Descrição❱:* O ninja libera grande quantidade de chakra para realizar uma combinação de elementos *Suiton* e *Raiton* este espelhe água de sua boca criando uma grande barreira ao seu redor, este adiciona raios a em seu jutsu para torná-lo mortal, está cai sobre o  oponente o causa do muito dano devido ao grande poder combinado da água com eletricidade, causa *+30%🔺 de dano se adversário atacar sem defesa*. 
 *➖Ataque & Defesa❕*
 *➖ Dura Três Rounds❕*
-  `; 
+  `;
+}
+
+function getTaide200() {
+  return `
+*🏟️🪨❪' Borudā Nage '❫🪨🏟️*
+ _( Arremesso Do Pedregulho )_
+
+➖➖➖➖➖➖➖➖➖➖
+🍂☁️🦋☁️🌙 ✨🛰️`` 🦋☁️ 
+ ✨°•☁️❄️  ☁️ ☁️ 🦋  ☁️🍂                
+         🍃     _🦟 Zz_           ✰  💫 \`\`
+    *💥( 😖   🔸___-    💫  \\ 😉* -_
+*🔸\`\`  /\`\\ \\  💥➿  🪨• • ,__) (╲* \`\`
+   *💥    < /   🔸-___   💫         ;>*__-
+🌿🪻_🍃 🍄 🪻🌿🌿 🍄\`🍃
+➖➖➖➖➖➖➖➖➖➖
+
+*• Dano: ( 200%🔺)*
+
+*❰🏟️🪨❱❪Descrição❫:* O Ninja com seu incrível Taijutsu e força bruta prepara seus punhos e dá um incrível soco no chão, fazendo vários pedregulhos sair do chão e ir ao ar, assim o usuário os atacam com um chute potente fazendo serem arremessados para o adversário causando um grande dano caso acerte o inimigo.
+*➖Taijutsu especial ❕*
+*➖Vence Taijutsu Básico❕*
+*➖Só pode Usar uma vez em (Batalha)❕*
+`;
 }
 
 module.exports = {
-    placaInicial,
-    placaCombo,
-    placaFinal,
-    getKunais,
-    getAtkDef,
-    getAtkDef3r,
-    getAtkDef3r1,
+  placaInicial,
+  placaCombo,
+  placaFinal,
+  getKunais,
+  getAtkDef,
+  getAtkDef3r,
+  getAtkDef3r1,
+  getTaide200,
 };
