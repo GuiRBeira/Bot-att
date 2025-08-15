@@ -25,6 +25,22 @@ async function getOrigem() {
   return `${osInfo.platform}-${osInfo.arch}-${cpu.manufacturer}-${id.slice(0, 6)}`;
 }
 
+function gitCommitIfChanges(message) {
+  try {
+    const changes = execSync('git status --porcelain').toString().trim();
+    if (changes) {
+      execSync('git add .');
+      execSync(`git commit -m "${message}"`);
+      execSync('git push', { stdio: 'inherit' });
+      console.log(`✅ Commit feito: ${message}`);
+    } else {
+      console.log('📂 Nenhuma modificação para commit.');
+    }
+  } catch (err) {
+    console.error('⚠️ Erro ao tentar commitar:', err.message);
+  }
+}
+
 (async () => {
   let lock;
 
@@ -36,16 +52,14 @@ async function getOrigem() {
 
     if (lock.ativo) {
       console.log(`❌ Bot já está ativo no dispositivo: ${lock.origem}`);
-      //process.exit();
+      //process.exit(); // Se quiser impedir mais de uma instância, descomente
     }
 
     lock.ativo = true;
     lock.origem = await getOrigem();
     fs.writeFileSync('lock.json', JSON.stringify(lock, null, 2));
 
-    execSync('git add .');
-    execSync(`git commit -m "Bot iniciado no ${lock.origem}"`);
-    execSync('git push', { stdio: 'inherit' });
+    gitCommitIfChanges(`Bot iniciado no ${lock.origem}`);
 
     process.on('SIGINT', () => liberar(true));
     process.on('SIGTERM', () => liberar(true));
@@ -71,13 +85,7 @@ async function getOrigem() {
     lock.ativo = false;
     fs.writeFileSync('lock.json', JSON.stringify(lock, null, 2));
 
-    try {
-      execSync('git add .');
-      execSync(`git commit -m "Bot encerrado no ${lock.origem}"`);
-      execSync('git push', { stdio: 'inherit' });
-    } catch (err) {
-      console.error('⚠️ Erro ao liberar lock:', err.message);
-    }
+    gitCommitIfChanges(`Bot encerrado no ${lock.origem}`);
 
     if (ehFinalForcado) process.exit(0);
   }
