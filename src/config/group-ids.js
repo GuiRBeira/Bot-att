@@ -27,7 +27,8 @@ module.exports = {
     arenaspublicas: [
       '120363294193453338@g.us', // arena ninja
       '120363295275504328@g.us', // arena superior
-      '"557591801784-1489240947@g.us', // arena kumo
+      '557591801784-1489240947@g.us', // arena kumo
+      '556291280409-1566962636@g.us', // arena iwa
     ]
   }
   
