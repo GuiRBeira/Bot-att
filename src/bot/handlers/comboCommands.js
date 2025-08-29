@@ -28,7 +28,7 @@ const comboCommands = {
 };
 
 async function processCombo(sock, msg, text) {
-    if (!msg.startsWith('!placa')) {
+    if (!text.startsWith('!placa')) {
         const [cmd, nome, cla, rank, gasto = 0] = text.split(' ');
     
         if (cmd === 'Boa' && (text.toLowerCase().startsWith('boa luta'))) {
