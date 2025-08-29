@@ -1,6 +1,7 @@
 // Combos
 const { placaInicial, placaCombo, placaFinal, getKunais, getAtkDef, getAtkDef3r, getAtkDef3r1, getTaide200 } = require('../../combo/combochu');
 const { placaJInicial, placaJFinal } = require('../../combo/combojou');
+const { placa } = require('../../combo/placas');
 
 const comboCommands = {
     '/pi': placaInicial,
@@ -23,24 +24,30 @@ const comboCommands = {
     '!atkdef3r': getAtkDef3r,
     '!atkdef3r1': getAtkDef3r1,
     '!taide200': getTaide200,
+    '!placa': placa
 };
 
 async function processCombo(sock, msg, text) {
-    const [cmd, nome, cla, rank, gasto = 0] = text.split(' ');
-
-    if (cmd === 'Boa' && (text.toLowerCase().startsWith('boa luta'))) {
-        if (msg.key.fromMe) return;
-        await sock.sendMessage(msg.key.remoteJid, { text: 'Boa luta' });
-        return;
-    }
-
-    const commandFn = comboCommands[cmd];
-    if (commandFn) {
-        const response = commandFn(nome, cla, rank, gasto);
-        await sock.sendMessage(msg.key.remoteJid, { text: response });
-    }
+    if (!msg.startsWith('!placa')) {
+        const [cmd, nome, cla, rank, gasto = 0] = text.split(' ');
     
-    if (!commandFn) return;
+        if (cmd === 'Boa' && (text.toLowerCase().startsWith('boa luta'))) {
+            if (msg.key.fromMe) return;
+            await sock.sendMessage(msg.key.remoteJid, { text: 'Boa luta' });
+            return;
+        }
+    
+        const commandFn = comboCommands[cmd];
+        if (commandFn) {
+            const response = commandFn(nome, cla, rank, gasto);
+            await sock.sendMessage(msg.key.remoteJid, { text: response });
+        }
+        
+        if (!commandFn) return;
+    } else {
+        const [cmd, args, nome, cla, rank, nome1, cla1, rank1] = text.split(' ');
+        await sock.sendMessage(msg.key.remoteJid, { text: placa(args, nome, cla, rank, nome1, cla1, rank1) });
+    }
 }
 
 module.exports = { processCombo };

@@ -20,3 +20,7 @@ ${rank1} ⟦❝ ${cla1} ${nome1} ${cla1} ❞ ⟧ ${rank1}
 ●
 *○➖➖❰ ${dia} ⟦○ ☆ ❲${mes}❳ ☆ ○⟧ ${ano} ❱➖➖○*`;
 }
+
+module.exports = {
+    placa
+};
