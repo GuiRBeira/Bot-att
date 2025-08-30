@@ -14,6 +14,22 @@ function salvarArenas(arenas) {
   fs.writeFileSync(arenasPath, JSON.stringify(arenas, null, 2))
 }
 
+// Função para adicionar arena
+function adicionarArena(nome) {
+    const arenas = carregarArenas();
+
+    // Verifica se já existe
+    if (arenas.find(a => a.nome.toLowerCase() === nome.toLowerCase())) {
+        throw new Error(`⚠️ A arena "${nome}" já existe!`);
+    }
+
+    // Adiciona
+    arenas.push({ nome, disponivel: true });
+    salvarArenas(arenas);
+
+    return `✅ Arena "${nome}" adicionada com sucesso!`;
+}
+
 // Listar apenas arenas ativas
 function listarArenasDisponiveis() {
   const arenas = carregarArenas()
@@ -62,9 +78,8 @@ function sortearElemento() {
 module.exports = {
     sortearPatente,
     sortearElemento,
-    carregarArenas,
-    salvarArenas,
     listarArenasDisponiveis,
     marcarArenaDisponivel,
-    sortearArenaDisponivel
+    sortearArenaDisponivel,
+    adicionarArena
 }

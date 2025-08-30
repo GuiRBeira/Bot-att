@@ -2,8 +2,7 @@
 const { 
     sortearPatente,
     sortearElemento,
-    carregarArenas,
-    salvarArenas,
+    adicionarArena,
     listarArenasDisponiveis,
     marcarArenaDisponivel,
     sortearArenaDisponivel, 
