@@ -55,7 +55,8 @@ function marcarArenaDisponivel(nome) {
 
 // Sortear arena disponível
 function sortearArenaDisponivel() {
-    const disponiveis = listarArenasDisponiveis();
+    const arenas = carregarArenas();
+    const disponiveis = arenas.filter(a => a.disponivel);
 
     if (disponiveis.length === 0) {
         throw new Error('⚠️ Não há arenas disponíveis!');
