@@ -15,7 +15,7 @@ module.exports = {
       '120363301387431896@g.us', //mercado negro
       '554888043300@s.whatsapp.net', // bruna mercado
       '120363294193453338@g.us', // arena ninja
-      '120363417890844377@g.us' //grupo do prodigio
+      '120363351084211015@g.us' //grupo do prodigio
     ],
     arenaspublicas: [
       '120363294193453338@g.us', // arena ninja
