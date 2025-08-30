@@ -1,36 +1,82 @@
 // Coliseu
-const { processarAposta } = require('../../coliseu/apostas');
-const { rulesApostas, limApostas } = require('../../coliseu/info-apostas');
-const { escolherArenaAleatoria, sortearPatente, sortearElemento } = require('../../coliseu/sorteios');
+const { 
+    sortearPatente,
+    sortearElemento,
+    carregarArenas,
+    salvarArenas,
+    listarArenasDisponiveis,
+    marcarArenaDisponivel,
+    sortearArenaDisponivel, 
+    sortearPatente, 
+    sortearElemento } = require('../../coliseu/sorteios');
 
-const patentesValidas = ["Gennin", "Chunnin", "Jounnin", "Anbu", "Sannin", "Daimyo", "Kage", "Rikkudo"];
+const patentesValidas = [
+    "Gennin",
+    "Chunnin",
+    "Jounnin",
+    "Anbu",
+    "Sannin",
+    "Daimyo",
+    "Kage",
+    "Rikkudo"
+];
 
 const commands = {
     '!arena': {
-        execute: () => escolherArenaAleatoria(),
+    execute: async (args) => {
+        const action = args[0]; // primeiro argumento é a ação
+        const nome = args.slice(1).join(" "); // resto é o nome da arena (se tiver)
+
+        switch (action) {
+            case "add":
+                if (!nome) throw new Error("⚠️ Informe o nome da arena!");
+                return adicionarArena(nome);
+
+            case "list":
+                return listarArenasDisponiveis();
+
+            case "toggle":
+                if (!nome) throw new Error("⚠️ Informe o nome da arena!");
+                return marcarArenaDisponivel(nome);
+
+            case "reset":
+                return resetarArenas();
+
+            case "sorteio":
+                return sortearArenaDisponivel();
+
+            default:
+                return "⚔️ Comando inválido!\nUse: add, list, toggle, reset, sorteio";
+            }
+        },
     },
     '!elemento': {
-        execute: () => sortearElemento(),
+        execute: () => {
+            return sortearElemento();
+        },
     },
     '!patente': {
         execute: (args) => {
-            if (!args || !patentesValidas.includes(args)) {
-                throw new Error('Uso incorreto!\nExemplo: !patente Gennin\nOpções: ' + patentesValidas.join(', '));
+            const patente = args[0];
+            if (!patente || !patentesValidas.includes(patente)) {
+                throw new Error(
+                    'Uso incorreto!\nExemplo: !patente Gennin\nOpções: ' + patentesValidas.join(', ')
+                );
             }
-            const result = sortearPatente(args);
-            return `Patente sorteada: ${result.nome}`;
+            const result = sortearPatente(patente);
+            return `🎖️ Patente sorteada: ${result.nome}`;
         }
     }
-}
+};
 
 async function processColiseuMessages(sock, msg, text) {
-    const [cmd, ...args] = text.split(' ');
+    const [cmd, ...args] = text.trim().split(/\s+/); 
     const command = commands[cmd];
 
     if (!command) return; // comando não existe
 
     try {
-        const response = await command.execute(args.join(' ').trim());
+        const response = await command.execute(args);
         await sock.sendMessage(msg.key.remoteJid, { text: response });
     } catch (error) {
         await sock.sendMessage(msg.key.remoteJid, { text: `❌ ${error.message}` });

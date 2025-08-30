@@ -1,0 +1,107 @@
+[
+  {
+    "nome": "*Arena Trovão ⚡*",
+    "descricao": "A arena trovão, foi construída  após a guerra em Kumogakure, os ninjas que nela lutam possuem a habilidade,  \"manto de chakra estilo raio\", o mesmo utilizado pelo Raikage,  seus efeitos aumentam drasticamente sua velocidade e resistência.\n( As resistencias Variam de acordo com a patente da luta)\n[🈂20%🔻]\n[✳30%🔻]\n[✴40%🔻]\n[\"💠+\" 50%🔻]",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena Uchiha ⭕*",
+    "descricao": "Um espaço criado para um treinamento no estilo Uchiha, ninjas que lutam nessa Arena possuem o Sharingan, tendo a habilidade de copiar até 5 jutsus do oponente com um gasto de ( -20%🔹 ) por jutsu.\n(Nessa Arena você poderá copiar qualquer Jutsu do oponente caso não tenha incluindo Rank SS,S,A e etc).",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena Hyuuga ⚪*",
+    "descricao": "O Clã Hyuuga decidiu passar seus conhecimentos adiante, então construíram um baluarte (estrutura militar usada para defesas em guerras), para então treinar seus discípulos, nessa arena os pontos de chakra do inimigo são visíveis, e cada ataque acertado drena uma parte do chakra do oponente.\n(Caso aceite dano levará (-30%🔹) no round",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena Might-Guy🥋*",
+    "descricao": "Guy, resolveu abrir uma academia para ensinar taijutsu aos ninjas de Konohagakure, por seus conhecimentos avançados ele ensinou técnicas extremamente avançadas a  seus ninjas sendo eles capazes de realizar a abertura dos oito portões internos.\n(Taijutsu Especial Ignora Qualquer Ativação imune a taijutsu)",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena Karin 🌐*",
+    "descricao": "Karin Cria um campo sensorial perfeito tornando essa arena uma das mais difíceis de se batalhar.\n\n(Ambos os ninjas possuem habilidades sensoriais perfeitas)\n\n(Imunidade a sensor não funciona nessa arena).",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜  Arena do Vazio Silencioso 🔮*",
+    "descricao": "No Vazio Silencioso, todas as formas de interferência sutil sejam ecos, drenos contínuos de vitalidade ou reduções de danos são completamente anuladas.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena do Ceifeiro 👹*",
+    "descricao": "Nesta Arena reside um Ceifeiro da Morte invocado pelo Juíz, o Ceifeiro ataca toda vez que qualquer um dos oponentes estiverem sem defesa, arrancando parte de sua energia vital, sendo assim, ambos perder (-30%❣) de HP caso ataquem sem defesas.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena da Luz ✨*",
+    "descricao": "Este local foi marcado por uma luz instável e cortante. Toda manipulação de energia aqui causa dor e desgaste físico direto. Todo jutsu ativado consome ( 10% ❣🔹) da vitalidade pois o ambiente fragmenta a estabilidade do chakra dos jogadores.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena Prisão Estelar 🪐*",
+    "descricao": "Um campo suspenso além da realidade, onde as leis da gravidade foram aniquiladas. Aqui, corpos flutuam, movimentos perdem peso, e golpes físicos tornam-se inúteis diante do vácuo absoluto. Em meio ao silêncio espacial, apenas o controle do chakra pode romper o vazio desta prisão cósmica.\nTodos os taijutsus causam ( 0%🔺) de danos.\nEsse efeito só é cortado caso um dos oponentes possuir até ( 30%🔹) ou menos de chakra restante ou for paralisado.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arenas Elementares 💧🌪🔥⚡⛰*",
+    "descricao": "Essa são arenas onde os participantes vão receber buffs e debuffs referentes ao elementos da arena, exemplo  +30 🔺 em dano de Katon  e menos - 30 🔺  em dano fuuton na arena de fogo, porém  esse buffs e debuffs será trocados d e luta para luta.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena da Prisão de Sangue 🩸*",
+    "descricao": "Neste local todas as tentativas de fuga são falhadas, causando um dano de ( 10%❣) sempre que o Ninja tentar utilizar o jutsu de Fuga/Substituição.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena Namikaze 〽*",
+    "descricao": "Minato Namikaze, era conhecido como  \"Relampago Amarelo\" temido em todo o mundo ninja, durante sua vida foi considerado o ninja mais rapido, e executava seus inimigos sem eles nem mesmo sentirem a sua presença, seu hiraishin era uma técnica impecável  tanto para ataque quanto para fugir alem de o tornar praticamente imune a habilidades sensoriais podendo aparecer em qualquer lugar devido as suas kunais nesse espaço todos possuem a habilidade Hiraishin.\n(Nessa Arena todas as Fugas são imune a sensor)",
+    "disponivel": false
+  },
+  {
+    "nome": "*Arena Estrelar 🌠*",
+    "descricao": "A arena estrelar  é a arena perfeita onde foi construída de forma  que seja indestrutível  e  inalterável, onde não restrição, buffs ou debuffs.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena Das Cobras🐍*",
+    "descricao": "Orochimaru Ensinou a seus ninjas uma técnica um tanto quanto poderosa nessa arena os ninjas possuem uma habilidade secreta ensinada pelo sannin.\n( Danos Que seriam Letais deixam o Oponente com 10%♥ de HP apenas uma vez)\n Após receber dano letal, o oponente perde todos os status negativos de perda de vida, como veneno ou sangramento.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena do Vigor 🌿*",
+    "descricao": "Utilizando de uma técnica secreta desenvolvida pelos cientistas de KonohaGakure,sempre que o oponente utilizar aumento, regeneração de chakra ou hp o outro Ninja recebe ( 10%❣🔹) de Vigor.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena da Troca Celestial 🌬*",
+    "descricao": "Esta Arena especial conjurada pelo Juíz do Coliseu, faz com o status inicial da luta seja alterado, fazendo assim um troca radical no local.\n\n*Status Inicial:*\n\n*200% ❤ // 400%🔹, passa a ser: 400%❤ // 200%🔹.*",
+    "disponivel": false
+  },
+  {
+    "nome": "*🌀 Campo do Portão Interior 🌀*",
+    "descricao": "Um domínio ancestral onde as leis do combate corporal se sobrepõem ao próprio chakra. Diz-se que este espaço ecoa o espírito dos antigos mestres que abriram os Portões Internos, moldando um campo onde a força física é inevitável e o corpo se torna a verdadeira arma.\nTodos os Taijutsus, independentemente de sua natureza ou estilo, passam a ser considerados Taijutsu Corporal.\nHabilidades que interagem ou ampliam Taijutsu Corporal se aplicam a qualquer Taijutsu utilizado neste campo.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena do Vigor 🌿*",
+    "descricao": "Utilizando de uma técnica secreta desenvolvida pelos cientistas de KonohaGakure,sempre que o oponente utilizar aumento, regeneração de chakra ou hp o outro Ninja recebe ( 10%❣🔹) de Vigor.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena da Troca Celestial 🌬*",
+    "descricao": "Esta Arena especial conjurada pelo Juíz do Coliseu, faz com o status inicial da luta seja alterado, fazendo assim um troca radical no local.\n\n*Status Inicial:*\n\n*200% ❤ // 400%🔹, passa a ser: 400%❤ // 200%🔹.*",
+    "disponivel": false
+  },
+  {
+    "nome": "*🌀 Campo do Portão Interior 🌀*",
+    "descricao": "Um domínio ancestral onde as leis do combate corporal se sobrepõem ao próprio chakra. Diz-se que este espaço ecoa o espírito dos antigos mestres que abriram os Portões Internos, moldando um campo onde a força física é inevitável e o corpo se torna a verdadeira arma.\nTodos os Taijutsus, independentemente de sua natureza ou estilo, passam a ser considerados Taijutsu Corporal.\nHabilidades que interagem ou ampliam Taijutsu Corporal se aplicam a qualquer Taijutsu utilizado neste campo.",
+    "disponivel": false
+  },
+  {
+    "nome": "*➜ Arena do Vigor 🌿*",
+    "descricao": "Utilizando de uma técnica secreta desenvolvida pelos cientistas de KonohaGakure,sempre que o oponente utilizar aumento, regeneração de chakra ou hp o outro Ninja recebe ( 10%❣🔹) de Vigor.",
+    "disponivel": false
+  }
+]
