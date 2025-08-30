@@ -1,6 +1,6 @@
 [
   {
-    "nome": "*Arena Trovão ⚡*",
+    "nome": "*➜ Arena Trovão ⚡*",
     "descricao": "A arena trovão, foi construída  após a guerra em Kumogakure, os ninjas que nela lutam possuem a habilidade,  \"manto de chakra estilo raio\", o mesmo utilizado pelo Raikage,  seus efeitos aumentam drasticamente sua velocidade e resistência.\n( As resistencias Variam de acordo com a patente da luta)\n[🈂20%🔻]\n[✳30%🔻]\n[✴40%🔻]\n[\"💠+\" 50%🔻]",
     "disponivel": false
   },
@@ -60,7 +60,7 @@
     "disponivel": false
   },
   {
-    "nome": "*Arena Estrelar 🌠*",
+    "nome": "*➜ Arena Estrelar 🌠*",
     "descricao": "A arena estrelar  é a arena perfeita onde foi construída de forma  que seja indestrutível  e  inalterável, onde não restrição, buffs ou debuffs.",
     "disponivel": false
   },
@@ -80,28 +80,8 @@
     "disponivel": false
   },
   {
-    "nome": "*🌀 Campo do Portão Interior 🌀*",
+    "nome": "*➜ Campo do Portão Interior 🌀*",
     "descricao": "Um domínio ancestral onde as leis do combate corporal se sobrepõem ao próprio chakra. Diz-se que este espaço ecoa o espírito dos antigos mestres que abriram os Portões Internos, moldando um campo onde a força física é inevitável e o corpo se torna a verdadeira arma.\nTodos os Taijutsus, independentemente de sua natureza ou estilo, passam a ser considerados Taijutsu Corporal.\nHabilidades que interagem ou ampliam Taijutsu Corporal se aplicam a qualquer Taijutsu utilizado neste campo.",
-    "disponivel": false
-  },
-  {
-    "nome": "*➜ Arena do Vigor 🌿*",
-    "descricao": "Utilizando de uma técnica secreta desenvolvida pelos cientistas de KonohaGakure,sempre que o oponente utilizar aumento, regeneração de chakra ou hp o outro Ninja recebe ( 10%❣🔹) de Vigor.",
-    "disponivel": false
-  },
-  {
-    "nome": "*➜ Arena da Troca Celestial 🌬*",
-    "descricao": "Esta Arena especial conjurada pelo Juíz do Coliseu, faz com o status inicial da luta seja alterado, fazendo assim um troca radical no local.\n\n*Status Inicial:*\n\n*200% ❤ // 400%🔹, passa a ser: 400%❤ // 200%🔹.*",
-    "disponivel": false
-  },
-  {
-    "nome": "*🌀 Campo do Portão Interior 🌀*",
-    "descricao": "Um domínio ancestral onde as leis do combate corporal se sobrepõem ao próprio chakra. Diz-se que este espaço ecoa o espírito dos antigos mestres que abriram os Portões Internos, moldando um campo onde a força física é inevitável e o corpo se torna a verdadeira arma.\nTodos os Taijutsus, independentemente de sua natureza ou estilo, passam a ser considerados Taijutsu Corporal.\nHabilidades que interagem ou ampliam Taijutsu Corporal se aplicam a qualquer Taijutsu utilizado neste campo.",
-    "disponivel": false
-  },
-  {
-    "nome": "*Arena do Vigor 🌿*",
-    "descricao": "Utilizando de uma técnica secreta desenvolvida pelos cientistas de KonohaGakure,sempre que o oponente utilizar aumento, regeneração de chakra ou hp o outro Ninja recebe ( 10%❣🔹) de Vigor.",
     "disponivel": false
   },
   {
