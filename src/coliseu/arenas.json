@@ -88,5 +88,25 @@
     "nome": "*➜ Forja dos Campeões ✨*",
     "descricao": "No coração flamejante desta arena, cada guerreiro é moldado pelo fogo da batalha. Aqueles que ousam lutar aqui sacrificam ( -20%💔 ) de seu HP sempre que baixam a guarda, enquanto as habilidades de redução despertam todo o seu potencial, recebendo um poderoso buff de ( +20%🔻 ) em danos.",
     "disponivel": true
+  },
+  {
+    "nome": "*➜ Trono do Destino 🏯*",
+    "descricao": "Erguido sobre as ruínas de eras esquecidas, este trono sagrado só reconhece os verdadeiros campeões. Aqui, cada golpe ecoa como um rugido dos deuses, e todos os ataques recebem um buff devastador de ( +30% 🔺 ) em danos.",
+    "disponivel": true
+  },
+  {
+    "nome": "*➜ Círculo dos Titãs 👹*",
+    "descricao": "No coração deste campo de batalhas colossais, nenhum truque ou defesa pode proteger os fracos. Os efeitos de ativações e jutsus imunes à Taijutsu são completamente anulados, enquanto cada golpe físico ressoa como o estrondo de um titã, recebendo um aumento devastador de ( +100 🔺 ) de dano em Taijutsu.",
+    "disponivel": true
+  },
+  {
+    "nome": "*➜ Vale da Ascensão ⛰*",
+    "descricao": "Entre montanhas ancestrais, onde o vento carrega os ecos dos que falharam, cada guerreiro é forjado no limite de sua própria resistência. Aqui, lutar sem defesa cobra um preço cruel, drenando ( -20%🔹 ) de Chakra instantaneamente. Em contrapartida, os jutsus elementais despertam um poder avassalador, recebendo um aumento de ( +30%🔺 ) em dano.",
+    "disponivel": true
+  },
+  {
+    "nome": "*➜ Abismo Celeste ☄*",
+    "descricao": "No vazio infinito onde o tempo e o espaço se distorcem, a percepção é levada ao limite. Aqui, nenhum segredo permanece oculto: ambos os lutadores despertam habilidades sensoriais perfeitas, tornando inútil qualquer imunidade a sensores. Mas esse poder tem um preço a pressão esmagadora do abismo consome lentamente a vida, drenando ( -10%💔 ) de HP a cada jutsu usado, incluindo ativações.",
+    "disponivel": true
   }
 ]
