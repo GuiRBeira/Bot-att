@@ -68,13 +68,23 @@ const commands = {
 };
 
 async function processColiseuMessages(sock, msg, text) {
-    const [cmd, ...args] = text.trim().split(/\s+/); 
+    const [cmd, ...rest] = text.trim().split(/\s+/);
     const command = commands[cmd];
-
     if (!command) return; // comando não existe
-
     try {
-        const response = await command.execute(args);
+        let response;
+        if (cmd === '!arena' && rest[0] === 'add') {
+            // pega tudo após "!arena add"
+            const content = text.split(' ').slice(2).join(' ');
+            // separa pelo \n
+            const [nome, descricao] = content.split('\n').map(s => s.trim());
+            if (!nome || !descricao) {
+                throw new Error("⚠️ Use o formato correto:\n!arena add Nome da Arena\\nDescrição da Arena");
+            }
+            response = adicionarArena(nome, descricao);
+        } else {
+            response = await command.execute(rest);
+        }
         await sock.sendMessage(msg.key.remoteJid, { text: response });
     } catch (error) {
         await sock.sendMessage(msg.key.remoteJid, { text: `❌ ${error.message}` });

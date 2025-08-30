@@ -15,7 +15,7 @@ function salvarArenas(arenas) {
 }
 
 // Função para adicionar arena
-function adicionarArena(nome) {
+function adicionarArena(nome, descricao) {
     const arenas = carregarArenas();
 
     // Verifica se já existe
@@ -24,7 +24,7 @@ function adicionarArena(nome) {
     }
 
     // Adiciona
-    arenas.push({ nome, disponivel: true });
+    arenas.push({ nome, descricao, disponivel: true });
     salvarArenas(arenas);
 
     return `✅ Arena "${nome}" adicionada com sucesso!`;
