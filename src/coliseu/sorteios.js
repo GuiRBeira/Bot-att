@@ -34,7 +34,7 @@ function adicionarArena(nome, descricao) {
 function listarArenasDisponiveis() {
   const arenas = carregarArenas()
       // Retorna uma string legível
-    return arenas.map(a => `• ${a.nome} ${a.disponivel ? "✅" : "❌"}\n`).join("\n\n");
+    return arenas.map(a => `• ${a.nome} ${a.disponivel ? "✅" : "❌"}\n`).join("\n");
 }
 
 // Alterar disponibilidade de uma arena
