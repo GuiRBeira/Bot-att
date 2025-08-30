@@ -56,7 +56,6 @@ function sortearArenaDisponivel() {
     }
 
     const sorteada = disponiveis[Math.floor(Math.random() * disponiveis.length)];
-    marcarArenaIndisponivel(sorteada.nome);
 
     return `${sorteada.nome}\n${sorteada.descricao}`;
 }
