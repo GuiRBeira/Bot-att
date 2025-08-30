@@ -103,5 +103,10 @@
     "nome": "*➜ Arena do Vigor 🌿*",
     "descricao": "Utilizando de uma técnica secreta desenvolvida pelos cientistas de KonohaGakure,sempre que o oponente utilizar aumento, regeneração de chakra ou hp o outro Ninja recebe ( 10%❣🔹) de Vigor.",
     "disponivel": false
+  },
+  {
+    "nome": "➜ Forja dos Campeões ✨",
+    "descricao": "No coração flamejante desta arena, cada guerreiro é moldado pelo fogo da batalha. Aqueles que ousam lutar aqui sacrificam ( -20%💔 ) de seu HP sempre que baixam a guarda, enquanto as habilidades de redução despertam todo o seu potencial, recebendo um poderoso buff de ( +20%🔻 ) em danos.",
+    "disponivel": true
   }
 ]
