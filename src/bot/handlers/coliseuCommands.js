@@ -7,8 +7,7 @@ const {
     listarArenasDisponiveis,
     marcarArenaDisponivel,
     sortearArenaDisponivel, 
-    sortearPatente, 
-    sortearElemento } = require('../../coliseu/sorteios');
+} = require('../../coliseu/sorteios');
 
 const patentesValidas = [
     "Gennin",
