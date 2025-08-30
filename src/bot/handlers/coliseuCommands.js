@@ -79,7 +79,7 @@ async function processColiseuMessages(sock, msg, text) {
             // separa pelo \n
             const [nome, descricao] = content.split('\n').map(s => s.trim());
             if (!nome || !descricao) {
-                throw new Error("⚠️ Use o formato correto:\n!arena add Nome da Arena\\nDescrição da Arena");
+                throw new Error("⚠️ Use o formato correto:\n-----------------------------\n!arena add Nome da Arena\nDescrição da Arena\n-----------------------------");
             }
             response = adicionarArena(nome, descricao);
         } else {
