@@ -38,14 +38,20 @@ function listarArenasDisponiveis() {
 }
 
 // Alterar disponibilidade de uma arena
-function marcarArenaDisponivel(id, status) {
+function marcarArenaDisponivel(nome) {
   const arenas = carregarArenas()
-  const arena = arenas.find(a => a.id === id)
-  if (arena) {
-    arena.disponivel = status
-    salvarArenas(arenas)
+  const arena = arenas.find(a => a.nome === nome)
+
+  if (!arena) {
+    return `❌ Arena "${nome}" não encontrada.`
   }
+
+  arena.disponivel = !arena.disponivel
+  salvarArenas(arenas)
+
+  return `🔀 Arena "${arena.nome}" agora está ${arena.disponivel ? "✅ Disponível" : "❌ Indisponível"}.`
 }
+
 
 // Sortear arena disponível
 function sortearArenaDisponivel() {
