@@ -3,7 +3,7 @@ const { DisconnectReason, makeWASocket, useMultiFileAuthState } = require('baile
 const qrcode = require('qrcode-terminal'); // NOVO
 
 // Group-IDS
-const { groupIds, vila, coliseu, passe, arenaspublicas } = require('../config/group-ids');
+const { groupIds, vila, coliseu, passe, arenaspublicas, cupula } = require('../config/group-ids');
 
 // Funções de processamento de mensagens
 const { processVilaMessages } = require('./handlers/vilaCommands')
