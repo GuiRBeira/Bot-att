@@ -25,6 +25,9 @@ module.exports = {
     ],
     clans: [
       ''
+    ],
+    cupula: [
+      '120363317644374250@g.us' //cupula de ame
     ]
   }
   

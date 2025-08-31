@@ -23,8 +23,7 @@ const comboCommands = {
     '!atkdef': getAtkDef,
     '!atkdef3r': getAtkDef3r,
     '!atkdef3r1': getAtkDef3r1,
-    '!taide200': getTaide200,
-    '!placa': placa
+    '!taide200': getTaide200
 };
 
 async function processCombo(sock, msg, text) {

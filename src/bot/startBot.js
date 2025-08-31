@@ -39,6 +39,9 @@ function startBot() {
         if (passe.includes(remoteJid)) {
             await processPasseMessages(sock, msg, text);
         }
+        if (cupula.includes(remoteJid)) {
+            await processCupulaMessages(sock, msg, text);
+        }
         if (text.startsWith('!m')) {
             console.log('Mensagem recebida:', JSON.stringify(msg, null, 2));
         }
