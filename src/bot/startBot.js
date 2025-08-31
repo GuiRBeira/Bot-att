@@ -11,6 +11,7 @@ const { processGameMessages, processSlotMachine, processRoulette } = require('./
 const { processCombo } = require('./handlers/comboCommands')
 const { processColiseuMessages } = require('./handlers/coliseuCommands')
 const { processPasseMessages } = require('./handlers/passeCommands');
+const { processCupulaMessages} = require('./handlers/cupulaCommands');
 
 function startBot() {
     async function processMessage(sock, msg) {
