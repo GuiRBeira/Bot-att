@@ -1,4 +1,4 @@
-import { Gabarito } from "../../games/batalhanaval";
+import { Gabarito } from "../../games/batalhanaval.js";
 
 const cupulaCommands = {
     '!gabarito': async (sock, msg) => {

@@ -52,7 +52,6 @@ function startBot() {
         const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
         const sock = makeWASocket({
             auth: state
-            // printQRInTerminal removido
         });
 
         sock.ev.on('connection.update', (update) => {
@@ -91,7 +90,6 @@ function startBot() {
             }
         });
     }
-
     connectToWhatsApp();
 }
 
