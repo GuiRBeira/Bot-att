@@ -52,6 +52,12 @@ function marcarArenaDisponivel(nome) {
   return `🔀 Arena "${arena.nome}" agora está ${arena.disponivel ? "✅ Disponível" : "❌ Indisponível"}.`
 }
 
+// Resetar arenas (todas indisponíveis)
+function resetarArenas() {
+  const arenas = carregarArenas()
+  arenas.forEach(a => a.disponivel = false)
+  salvarArenas(arenas)
+}
 
 // Sortear arena disponível
 function sortearArenaDisponivel() {
@@ -88,5 +94,6 @@ module.exports = {
     listarArenasDisponiveis,
     marcarArenaDisponivel,
     sortearArenaDisponivel,
-    adicionarArena
+    adicionarArena,
+    resetarArenas
 }

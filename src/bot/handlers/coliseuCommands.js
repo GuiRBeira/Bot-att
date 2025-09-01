@@ -6,6 +6,7 @@ const {
     listarArenasDisponiveis,
     marcarArenaDisponivel,
     sortearArenaDisponivel, 
+    resetarArenas,
 } = require('../../coliseu/sorteios');
 
 const patentesValidas = [
@@ -38,7 +39,8 @@ const commands = {
                 return marcarArenaDisponivel(nome);
 
             case "reset":
-                return resetarArenas();
+                resetarArenas();
+                return '♻️ Todas as arenas foram resetadas (marcadas como indisponíveis).'
 
             case "sorteio":
                 return sortearArenaDisponivel();

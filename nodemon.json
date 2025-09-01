@@ -1,0 +1,10 @@
+{
+  "watch": ["src"],
+  "ext": "js,json",
+  "ignore": [
+    "lock.json",
+    "auth_info_baileys/*",
+    ".git/*",
+    "node_modules/*"
+  ]
+}

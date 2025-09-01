@@ -17,7 +17,7 @@ function gerarGabarito(linhas = 6, colunas = 6) {
 }
 
 // Converte o gabarito em string formatada pro WhatsApp
-function Gabarito(gabarito) {
+function Gabarito(gabarito = gerarGabarito()) {
   let texto = "💫➜ 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ 6️⃣\n";
   for (const linha in gabarito) {
     texto += ` ( ${linha} ) ${gabarito[linha].join(" ")}\n`;
@@ -25,6 +25,4 @@ function Gabarito(gabarito) {
   return texto;
 }
 
-module.exports = { 
-    Gabarito 
-};
+module.exports = Gabarito;
